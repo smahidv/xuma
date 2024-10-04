@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --purple-taupe: #54394b;
+  --Dark-charcoal: #303130;
+  --crayola:#eeb3d2;
+  --philippine-gray:#8a9090;
+}
+
+
