@@ -2,11 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
 :root {
-  --purple-taupe: #54394b;
-  --Dark-charcoal: #303130;
-  --crayola:#eeb3d2;
-  --philippine-gray:#8a9090;
+	--purple-taupe: #54394b;
+	--Dark-charcoal: #303130;
+	--crayola: #eeb3d2;
+	--philippine-gray: #8a9090;
+	--font-avenir: 'Avenir', sans-serif;
+}
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	background-color: black;
+	color: white;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	min-height: 100vh;
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+p,
+li {
+	max-width: 65ch;
+	text-wrap: pretty;
+	overflow-wrap: break-word;
+	
+}
+img,
+video,
+svg {
+	display: block;
+	max-width: 100%;
+}
 
