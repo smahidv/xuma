@@ -41,7 +41,7 @@ export default function Footer() {
 				{contacts.map((item, ind) => (
 					<div key={ind} className="flex gap-1 items-center">
 						<FontAwesomeIcon icon={ faWhatsapp } className="size-4"/>
-						<p className="font-black text-[0.9rem]">{item.num}</p>
+						<p className="font-black text-[0.9rem]">{item}</p>
 					</div>
 				))}
 			</div>

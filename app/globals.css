@@ -27,6 +27,7 @@ html,
 body {
 	background-color: black;
 	color: white;
+	overflow-x: hidden;
 }
 body {
 	line-height: 1.5;
@@ -47,7 +48,6 @@ h6 {
 
 p,
 li {
-	max-width: 65ch;
 	text-wrap: pretty;
 	overflow-wrap: break-word;
 	
@@ -59,3 +59,8 @@ svg {
 	max-width: 100%;
 }
 
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
