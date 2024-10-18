@@ -8,12 +8,16 @@ import girlGym from "@/public/images/girlGym.png";
 import PinkCircle from "@/components/home/PinkCircle";
 import SlidesFonctions from "@/components/home/SlidesFonctions";
 import { slidesContent } from "@/constants";
-
+import spaces from "@/public/images/spaces.jpg";
+import activities from "@/public/images/activities.jpg";
+import Link from "next/link";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Subscription from "@/components/home/Subscription";
 
 export default function Home() {
 	return (
 		<div>
-			<section className="relative flex md:h-[85dvh] mt-4  overflow-hidden justify-center items-center  ">
+			<section className="relative flex md:h-[86dvh] md:mb-4 mt-4 overflow-hidden justify-center items-center  ">
 				{/* Left Circle Image */}
 				<div className="hidden  lg:w-[320px] md:w-[200px] md:inline-flex absolute left-0 bottom-10 -translate-x-[30%]">
 					<Image
@@ -26,7 +30,7 @@ export default function Home() {
 				</div>
 
 				{/* Text Content */}
-				<div className=" flex justify-center items-center p-2 md:p-0 z-10">
+				<div className=" flex justify-center items-center p-2 md:p-0 z-10 lg:mt-28 ">
 					<div>
 						<h1 className="lg:text-6xl md:text-4xl text-2xl uppercase font-black">
 							you <br />
@@ -84,7 +88,7 @@ export default function Home() {
 					/>
 				</div>
 			</section>
-			<section className="flex  p-2    animate-infinite-scroll  ">
+			<section className="flex  p-2  animate-infinite-scroll  ">
 				{[...Array(2)].map((_, outerIndex) => (
 					<div key={outerIndex} className="flex gap-20 bg-purple_taupe px-20">
 						{sports.map((sport, id) => (
@@ -167,7 +171,67 @@ export default function Home() {
 				</div>
 			</section>
 			<section className="my-12  container  ">
-				<SlidesFonctions slidesContent={slidesContent}  />
+				<SlidesFonctions slidesContent={slidesContent} />
+			</section>
+			<section className="my-12 mt-24 container grid md:grid-cols-2 gap-y-4 md:gap-x-10  ">
+				<div className="relative">
+					<div className="w-full">
+						<Image src={activities} alt="discover our activities" />
+					</div>
+					<div className="absolute top-0 left-0  w-0 h-0 border-r-[100px]  border-r-transparent border-b-[100px]  border-b-transparent border-t-[100px]  border-t-crayola "></div>
+					<div className="absolute left-1/2 top-1/2 -translate-x-1/2 font-black md:text-3xl uppercase whitespace-nowrap">
+						Our activities
+					</div>
+					<div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex justify-between items-center w-[90%] ">
+						<div className="w-4 md:w-10">
+							<Image src={symbol} alt="xuma symbom" />
+						</div>
+						<div className="center">
+							<Link href="#">
+								<span className="font-bold md:text-lg">Discover</span>
+								<FontAwesomeIcon
+									icon={faArrowRight}
+									className="text-white size-10 "
+								/>
+							</Link>
+						</div>
+					</div>
+				</div>
+				<div className="relative">
+					<div className="w-full">
+						<Image src={spaces} alt="discover our spaces" />
+					</div>
+					<div className="absolute top-0 left-0  w-0 h-0 border-r-[100px]  border-r-transparent border-b-[100px]  border-b-transparent border-t-[100px]  border-t-crayola "></div>
+					<div className="absolute left-1/2 top-1/2 -translate-x-1/2 font-black md:text-3xl uppercase whitespace-nowrap">
+						Our spaces
+					</div>
+					<div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex justify-between items-center w-[90%] ">
+						<div className="w-4 md:w-10">
+							<Image src={symbol} alt="xuma symbom" />
+						</div>
+						<div className="center">
+							<Link href="#">
+								<span className="font-bold md:text-lg">Discover</span>
+								<FontAwesomeIcon
+									icon={faArrowRight}
+									className="text-white size-10 "
+								/>
+							</Link>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section className="my-12 mt-24 container">
+				<div className="flex gap-4 items-center mb-6">
+					<div className="w-[50px]">
+						<Image src={symbol} alt="women symbol" width={57} height={63} />
+					</div>
+					<h2 className="uppercase font-black md:text-[1.7rem]">
+						Subscription
+					</h2>
+					<div className="w-[5rem] bg-crayola h-[2px]"></div>
+				</div>
+				<Subscription/>
 			</section>
 		</div>
 	);

@@ -6,6 +6,7 @@ header ul > li {
 	text-align: center;
 	padding-bottom: .2em;
 	position: relative;
+	font-weight: bold;
 	
 }
 header ul > li::after {
@@ -43,7 +44,7 @@ footer li:not(:first-child) {
 	}
 
 	header ul > li {
-		font-size:.92rem;
+		font-size:.85rem;
 	}
 	header ul > li::after {
 		width: 0;

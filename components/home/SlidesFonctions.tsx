@@ -55,100 +55,62 @@ const SlidesFonctions = ({ slidesContent }: SlidesContentProps) => {
 	return (
 		<div className="w-full h-full overflow-hidden">
 			<div
-				className="flex transition-transform duration-350 ease-in-out"
-				style={{ transform: `translateX(-${activeSlide * 100}%)` }}
+				className="flex transition-transform duration-350 ease-in-out  "
+				style={{
+					transform: `translateX(-${activeSlide * 100}%)`,
+				}}
 			>
 				{slidesContent.map((item, i) => (
 					<div
 						key={i}
-						className="relative flex-shrink-0 w-full h-full bg-black grid gap-4 md:grid-cols-2"
+						className="relative  flex-shrink-0 w-full h-full bg-black grid gap-4 md:grid-cols-2"
 					>
-						<div className="space-y-4 md:grid">
+						<div className="space-y-4 lg:space-y-8 xl:space-y-12  ">
 							<div className="flex relative">
-								<Chevron className="size-6 md:size-12 text-crayola fill-current" />
-								<Chevron className="absolute size-6 md:size-12 text-white fill-current left-4 md:left-10" />
+								<Chevron className="size-8 md:size-12 text-crayola fill-current" />
+								<Chevron className="absolute size-8 md:size-12 text-white fill-current left-5 md:left-10" />
 							</div>
 							<h2 className="font-black text-xl md:text-3xl lg:text-4xl uppercase">
 								{item.title}
 							</h2>
-
-							{isLargeScreen ? (
-								<div className="md:max-w-[350px] md:self-end bg-dark_gray rounded-2xl p-6">
-									<h3 className="uppercase font-black mb-1 md:text-xl">
-										we offer
-									</h3>
-									<p className="text-xs md:text-sm max-w-[46ch]">
-										{item.description}
-									</p>
-									<Link
-										href="#"
-										className="mt-4 pl-btn-sm-x pr-2 py-[0.2rem] md:pl-4 md:py-1 w-fit bg-white rounded-full flex gap-4 items-center"
-									>
-										<span className="text-black text-xs md:text-base font-bold">
-											Sign up
-										</span>
-										<div className="md:size-6 flex items-center justify-center rounded-full bg-crayola size-4">
-											<FontAwesomeIcon
-												icon={faArrowRight}
-												className="text-black md:size-4 size-2"
-											/>
-										</div>
-									</Link>
-								</div>
-							) : (
-								<div className="w-full">
-									<Image
-										src={item.image}
-										alt={item.alt}
-										width={800}
-										height={534}
-										className="object-cover rounded-2xl"
+						</div>
+						<div className="md:max-w-[350px] md:self-end bg-dark_gray rounded-2xl p-6 order-2 mt-4  md:my-0 lg:absolute lg:bottom-0 ">
+							<h3 className="uppercase font-black mb-1 md:text-xl">we offer</h3>
+							<p className="text-xs md:text-sm max-w-[46ch]">
+								{item.description}
+							</p>
+							<Link
+								href="#"
+								className="mt-4 pl-btn-sm-x pr-2 py-[0.2rem] md:pl-4 md:py-1 w-fit bg-white rounded-full flex gap-4 items-center"
+							>
+								<span className="text-black text-xs md:text-base font-bold">
+									Sign up
+								</span>
+								<div className="md:size-6 flex items-center justify-center rounded-full bg-crayola size-4">
+									<FontAwesomeIcon
+										icon={faArrowRight}
+										className="text-black md:size-4 size-2"
 									/>
 								</div>
-							)}
+							</Link>
 						</div>
-						{isLargeScreen ? (
-							<div className="w-full">
-								<Image
-									src={item.image}
-									alt={item.alt}
-									width={800}
-									height={534}
-									placeholder="blur"
-									className="object-cover rounded-2xl"
-								/>
-							</div>
-						) : (
-							<div className="md:max-w-[350px] md:self-end bg-dark_gray rounded-2xl p-6">
-								<h3 className="uppercase font-black mb-1 md:text-xl">
-									we offer
-								</h3>
-								<p className="text-xs md:text-sm max-w-[46ch]">
-									{item.description}
-								</p>
-								<Link
-									href="#"
-									className="mt-4 pl-btn-sm-x pr-2 py-[0.2rem] md:pl-4 md:py-1 w-fit bg-white rounded-full flex gap-4 items-center"
-								>
-									<span className="text-black text-xs md:text-base font-bold">
-										Sign up
-									</span>
-									<div className="md:size-6 flex items-center justify-center rounded-full bg-crayola size-4">
-										<FontAwesomeIcon
-											icon={faArrowRight}
-											className="text-black md:size-4 size-2"
-										/>
-									</div>
-								</Link>
-							</div>
-						)}
+						<div className="w-full order-1 lg:min-h-[320px] ">
+							<Image
+								src={item.image}
+								alt={item.alt}
+								width={800}
+								height={534}
+								placeholder="blur"
+								className="object-cover rounded-2xl "
+							/>
+						</div>
 					</div>
 				))}
 			</div>
-			<div className="flex justify-between mt-6 md:mt-12 items-center">
+			<div className="flex justify-between  md:mt-12 items-center">
 				<button
 					onClick={showPrevSlide}
-					className="bg-crayola px-4 py-1 text-black rounded-lg"
+					className="invisible md:visible bg-crayola px-4 py-1 text-black rounded-lg font-bold"
 				>
 					Prev
 				</button>
@@ -168,7 +130,7 @@ const SlidesFonctions = ({ slidesContent }: SlidesContentProps) => {
 
 				<button
 					onClick={showNextSlide}
-					className="bg-crayola px-4 py-1 text-black rounded-lg"
+					className="invisible md:visible bg-crayola px-4 py-1 text-black rounded-lg font-bold"
 				>
 					Next
 				</button>

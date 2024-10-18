@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Header, Footer } from "@/components";
 import localFont from "next/font/local";
-
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 const avenir = localFont({
   src: [
@@ -41,7 +43,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

@@ -20,7 +20,7 @@ export default function Header() {
 	
 
 	return (
-		<header className="lg:px-14 md:pt-4 p-2">
+		<header className="lg:px-14 md:pt-4 p-2 lg:fixed lg:top-0 bg-black lg:z-30 lg:w-full ">
 			<nav className="flex justify-between items-center ">
 				<Link href="/" className="lg:w-[130px] w-[80px]">
 					<Image
@@ -42,7 +42,7 @@ export default function Header() {
 					<Navigation className="space-y-8 lg:space-y-0 lg:flex gap-x-4 pt-24 lg:pt-0" />
 				</div>
 				<div className="flex md:gap-4 gap-1 items-center">
-					<button className="text-[0.5rem] md:text-base rounded-full bg-crayola text-black md:px-btn-md-x md:py-btn-md-y  px-btn-sm-x py-btn-sm-y font-black capitalize hover:shadow-crayola_shd">
+					<button className="text-sm sm:text-base rounded-full bg-crayola text-black md:px-btn-md-x md:py-btn-md-y  px-btn-sm-x py-btn-sm-y font-black capitalize hover:shadow-crayola_shd">
 						subscribe
 					</button>
 					<button
@@ -51,9 +51,9 @@ export default function Header() {
 						onClick={toggleMenu}
 					>
 						{!isMenuOpen ? (
-							<Bars2Icon className="md-w-10 w-6 text-white cursor-pointer" />
+							<Bars2Icon className="w-10 text-white cursor-pointer" />
 						) : (
-							<XMarkIcon className="md-w-10 w-6 text-white cursor-pointer" />
+							<XMarkIcon className="w-10  text-white cursor-pointer" />
 						)}
 					</button>
 				</div>
