@@ -23,7 +23,7 @@ import {
 export default function Home() {
 	return (
 		<div>
-			<section className="relative flex md:h-[90dvh] md:pb-4 pt-4 px-[0.75] overflow-hidden justify-center items-center  ">
+			<section className="relative flex md:h-[90dvh] md:pb-4 pt-4  overflow-hidden justify-center items-center  ">
 				{/* Left Circle Image */}
 				<div className="hidden  iPad:w-[260px]  lg:w-[300px] md:w-[200px] md:inline-flex absolute left-0 bottom-10 -translate-x-[30%]">
 					<Image
@@ -36,7 +36,7 @@ export default function Home() {
 				</div>
 
 				{/* Text Content */}
-				<div className=" flex justify-center items-center p-2 md:p-0 z-10 lg:mt-28 ">
+				<div className=" flex justify-center items-center px-3 pt-[10dvh] md:p-0 z-10 lg:mt-28 ">
 					<div>
 						<h1 className="lg:text-6xl md:text-4xl text-2xl uppercase font-black">
 							you <br />
@@ -46,7 +46,7 @@ export default function Home() {
 							className="text-2xl md:text-4xl text-crayola"
 							icon={faQuoteLeft}
 						/>
-						<p className="text-sm text-light_gray py-6 lg:min-w-[80ch] max-w-[65ch]">
+						<p className="text-sm text-light_gray md:py-6 py-3 lg:min-w-[80ch] max-w-[65ch]">
 							"At Xuma, we believe everyone deserves access to quality
 							facilities at fair prices. Our concept, designed by Moroccans for
 							Moroccans, is about more than just fitness — it’s about creating a
@@ -114,14 +114,14 @@ export default function Home() {
 				))}
 			</section>
 			<section className=" my-12 container">
-				<div className="flex gap-2 md:gap-4 items-center mb-6">
+				<div className="flex gap-2 md:gap-4 items-center md:mb-6 mb-3">
 					<div className="w-[30px] md:w-[50px]">
 						<Image src={symbol} alt="women symbol" width={57} height={63} />
 					</div>
-					<h2 className="uppercase font-black md:text-[1.7rem]">concept</h2>
+					<h2 className="uppercase font-black md:text-[1.7rem] text-lg ">concept</h2>
 					<div className="w-[5rem] bg-crayola h-[2px]"></div>
 				</div>
-				<p className="text-light_gray max-w-[48ch] ml-[45px] ">
+				<p className="text-light_gray max-w-[48ch] ml-[38px] md:ml-[66px] ">
 					At Xuma, we believe everyone deserves support no matter your skill
 					level, age, or gender. We provide the tools and resources to help you
 					unlock your full potential."
@@ -232,7 +232,7 @@ export default function Home() {
 					<div className="w-[30px] md:w-[50px]">
 						<Image src={symbol} alt="women symbol" width={57} height={63} />
 					</div>
-					<h2 className="uppercase font-black md:text-[1.7rem]">
+					<h2 className="uppercase font-black md:text-[1.7rem] text-lg">
 						Subscription
 					</h2>
 					<div className="w-[5rem] bg-crayola h-[2px]"></div>
@@ -258,10 +258,10 @@ export default function Home() {
 				<div className="md:flex justify-center  md:container gap-10 space-y-6 md:space-y-0  ">
 					<div className="md:pt-36 md:flex  flex-col relative md:after:absolute  after:top-0 after:right-0 after:w-[1px] after:bg-dark_gray after:h-full ">
 						<div className="md:relative bg-purple_taupe p-4 md:px-8 md:py-4">
-							<h2 className="tracking-widest font-bold text-lg md:text-4xl uppercase mb-1 md:mb-2">
+							<h2 className="tracking-widest font-bold text-xl md:text-4xl uppercase mb-1 md:mb-2">
 								Contact
 							</h2>
-							<p className="text-xs sm:text-base sm:max-w-[40ch] lg:max-w-[50ch]">
+							<p className="text-sm sm:text-base sm:max-w-[40ch] lg:max-w-[50ch]">
 								We pride ourselves on creating a friendly atmosphere and
 								encouraging community spirit.
 							</p>
@@ -275,19 +275,19 @@ export default function Home() {
 								<div>
 									<FontAwesomeIcon
 										icon={faTwitter}
-										className=" md:text-xs text-[0.6rem] "
+										className=" md:text-sm text-[0.6rem] "
 									/>
 								</div>
 								<div>
 									<FontAwesomeIcon
 										icon={faFacebook}
-										className="  md:text-xs text-[0.6rem] "
+										className="  md:text-sm text-[0.6rem] "
 									/>
 								</div>
 								<div>
 									<FontAwesomeIcon
 										icon={faInstagram}
-										className="  md:text-xs text-[0.6rem] "
+										className="  md:text-sm text-[0.6rem] "
 									/>
 								</div>
 							</div>
@@ -307,7 +307,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className="md:py-36 py-4 px-[0.75]">
+					<div className="md:py-36 py-4 px-3">
 						<h3 className="uppercase tracking-wider   font-black  md:text-xl mb-4 md:mb-8">
 							Get in touch for details!
 						</h3>
@@ -349,7 +349,7 @@ export default function Home() {
 					<h2 className="font-black  sm:text-3xl md:text-4xl text-xl">
 						Subscribe to our newsletter
 					</h2>
-					<p className="sm:text-xl text-xs pt-[10px] pb-[7px]">Register now to stay informed about the opening</p>
+					<p className="sm:text-xl text-xs py-[10px] ">Register now to stay informed about the opening</p>
 					<div className="xs:flex justify-center items-center gap-4">
 						<input
 							type="email"
@@ -358,7 +358,7 @@ export default function Home() {
 							className="outline-none px-2 py-1 md:px-6 md:py-3 rounded-md text-black  w-full placeholder:text-sm placeholder:md:text-base "
 							placeholder="E-mail"
 						/>
-						<div className="pt-[7px] xs:pt-0">
+						<div className="pt-6 xs:pt-0">
 						<button
 							type="button"
 							className="px-2 py-1 md:px-6 md:py-3 bg-crayola text-black rounded-md font-black"

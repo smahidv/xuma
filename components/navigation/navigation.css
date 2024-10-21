@@ -7,6 +7,7 @@ header ul > li {
 	padding-bottom: .2em;
 	position: relative;
 	font-weight: bold;
+	color: white;
 	
 }
 header ul > li::after {

@@ -22,7 +22,7 @@ export default function Header() {
 	
 
 	return (
-		<header className="lg:px-14 md:pt-4 p-2 lg:fixed lg:top-0 bg-black lg:z-30 lg:w-full ">
+		<header className="lg:px-14 md:pt-4 p-2 fixed top-0 bg-black z-30 w-full ">
 			<nav className="flex justify-between items-center ">
 				<Link href="/" className=" w-[90px] ">
 					<Image
