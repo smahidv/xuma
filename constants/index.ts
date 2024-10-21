@@ -71,7 +71,8 @@ export const pricing = [
     features: [
       "From 6 a.m. to 11 p.m.",
       "Mixed and 100% women's fitness area",
-      "Additional activities by reservation"
+      "Additional activities by reservation",
+      "Fight area"
     ]
   },
   {
@@ -79,12 +80,12 @@ export const pricing = [
     title: "Total Pass",
     monthPrice: "200",
     yearPrice: "3590",
-    description: "Unlimited access to all gym facilities, including the pool, sauna, and group classes.",
+    description: "Unlimited access to all gym facilities, including pool, sauna, and group classes.",
     features: [
       "24/7 access",
       "Includes pool and sauna access",
       "All group classes included",
-      "Free personal training session once a month"
+      "Free personal training session"
     ]
   },
   {

@@ -8,14 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '450px',
+        'iPad': {'raw': '(min-height: 1024px)'},
+      },
       fontFamily: {
         avenir: 'var(--font-avenir)',
       },
       container: {
         center: true,
         padding: {
-          DEFAULT: "1rem",
+          DEFAULT: "0.75rem",
           sm: "2rem",
+          md: "3rem",
           lg: "4rem",
         },
       },
@@ -28,6 +33,7 @@ const config: Config = {
       boxShadow: {
         crayola_shd: '0 0 20px #eeb3d2',
         crayola_sm_shd: '0 0 20px  #79506b',
+        inner:' inset 0 0 10px #eeb3d2',
       },
       padding: {
         'btn-sm-x': '0.33rem',
@@ -37,6 +43,8 @@ const config: Config = {
       },
       backgroundImage: {
         'hero-pattern': "url('/images/bgBlack.jpg')",
+        'hero-pattern-gray':"url('/images/bgGray.jpg')"
+        
       },
       animation: {
         "infinite-scroll": "infinite-scroll 20s linear infinite",
@@ -53,7 +61,7 @@ const config: Config = {
     function ({ addUtilities }: { addUtilities: (utilities: Record<string, any>) => void }) {
       const newUtilities = {
         '.text-shadow': {
-          textShadow: '-1px 1px 0 var(--philippine-gray),1px 1px 0 var(--philippine-gray),1px -1px 0 var(--philippine-gray),-1px -1px 0 var(--philippine-gray)',
+          textShadow: '-0.4px 0.4px 0 var(--philippine-gray),0.4px 0.4px 0 var(--philippine-gray),0.4px -0.4px 0 var(--philippine-gray),-0.4px -0.4px 0 var(--philippine-gray)',
         },
       };
       addUtilities(newUtilities);

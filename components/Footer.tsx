@@ -11,15 +11,15 @@ export default function Footer() {
 	return (
 		<footer className="container ">
 			<div className="flex justify-between flex-wrap gap-y-8 gap-x-2 py-8">
-				<div className="self-center min-w-[200px] max-w-[200px] flex-1 ">
+				<div className="self-center min-w-[150px] max-w-[200px] flex-1 ">
 					<Image src={xuma} alt="logo" width={274} height={53} />
 				</div>
 				<div className="flex justify-center flex-grow py-4">
 					<Navigation className="space-y-4" showMenuItem />
 				</div>
 				<div className="space-y-4 pl-4 md:pl-8 relative before:absolute before:left-0 before:top-0 before:w-[1px] before:h-full before:bg-gradient-to-b before:from-crayola before:to-purple_taupe ">
-					<h2 className="font-black text-4xl ">Join us!</h2>
-					<p className="text-light_gray font-bold">
+					<h2 className="font-black md:text-4xl text-3xl ">Join us!</h2>
+					<p className="text-light_gray font-bold max-w-[30ch] md:max-w-[50ch]">
 						If you want to get healthier and improve your body.
 					</p>
 					

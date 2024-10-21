@@ -107,7 +107,7 @@ const SlidesFonctions = ({ slidesContent }: SlidesContentProps) => {
 					</div>
 				))}
 			</div>
-			<div className="flex justify-between  md:mt-12 items-center">
+			<div className="flex md:justify-between justify-center    md:mt-12 items-center">
 				<button
 					onClick={showPrevSlide}
 					className="invisible md:visible bg-crayola px-4 py-1 text-black rounded-lg font-bold"
