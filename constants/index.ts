@@ -17,7 +17,7 @@ export const slidesContent = [
     alt: "Group Training",
     title: "Group Training",
     description:
-       "Diverse sessions like aerobics, Zumba, and muscle strengthening are available for you to join as per your preference"
+       "Diverse sessions like aerobics, Zumba, and muscle strengthening are available for you "
   },
   {
     image: pool,

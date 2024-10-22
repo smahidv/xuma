@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Chevron from "@/components/home/Chevron";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,7 +20,8 @@ interface SlidesContentProps {
 
 const SlidesFonctions = ({ slidesContent }: SlidesContentProps) => {
 	const [activeSlide, setSlideIndex] = useState(0);
-	const [isLargeScreen, setIsLargeScreen] = useState(false); // Initialize to false
+	const [isLargeScreen, setIsLargeScreen] = useState(false);
+	const startX = useRef(0); // Track swipe start position
 
 	// Ensure window.innerWidth is accessed only on client-side
 	useEffect(() => {
@@ -28,13 +29,8 @@ const SlidesFonctions = ({ slidesContent }: SlidesContentProps) => {
 			setIsLargeScreen(window.innerWidth > 768);
 		};
 
-		// Set initial screen size
 		handleResize();
-
-		// Update the state on resize
 		window.addEventListener("resize", handleResize);
-
-		// Clean up the event listener
 		return () => {
 			window.removeEventListener("resize", handleResize);
 		};
@@ -52,10 +48,32 @@ const SlidesFonctions = ({ slidesContent }: SlidesContentProps) => {
 		);
 	};
 
+	// Handle touch start event
+	const handleTouchStart = (e: React.TouchEvent) => {
+		startX.current = e.touches[0].clientX;
+	};
+
+	// Handle touch end event to detect swipe
+	const handleTouchEnd = (e: React.TouchEvent) => {
+		const endX = e.changedTouches[0].clientX;
+		if (startX.current - endX > 50) {
+			// Swipe left (next slide)
+			showNextSlide();
+		} else if (endX - startX.current > 50) {
+			// Swipe right (previous slide)
+			showPrevSlide();
+		}
+	};
+
 	return (
-		<div className="w-full h-full overflow-hidden">
+		<div
+			className="w-full h-full"
+
+		>
 			<div
 				className="flex transition-transform duration-350 ease-in-out  "
+				onTouchStart={handleTouchStart} // Register swipe start
+				onTouchEnd={handleTouchEnd}     // Register swipe end
 				style={{
 					transform: `translateX(-${activeSlide * 100}%)`,
 				}}
@@ -63,9 +81,9 @@ const SlidesFonctions = ({ slidesContent }: SlidesContentProps) => {
 				{slidesContent.map((item, i) => (
 					<div
 						key={i}
-						className="relative  flex-shrink-0 w-full h-full bg-black grid gap-4 md:grid-cols-2"
+						className="relative flex-shrink-0 w-full h-full bg-black grid gap-4 md:grid-cols-2 container "
 					>
-						<div className="space-y-4 lg:space-y-8 xl:space-y-12  ">
+						<div className="space-y-4 lg:space-y-8 xl:space-y-12">
 							<div className="flex relative">
 								<Chevron className="size-8 md:size-12 text-crayola fill-current" />
 								<Chevron className="absolute size-8 md:size-12 text-white fill-current left-5 md:left-10" />
@@ -74,7 +92,8 @@ const SlidesFonctions = ({ slidesContent }: SlidesContentProps) => {
 								{item.title}
 							</h2>
 						</div>
-						<div className="md:max-w-[350px] md:self-end bg-dark_gray rounded-2xl p-6 order-2 mt-4  md:my-0 lg:absolute lg:bottom-0 ">
+						
+						<div className=" lg:ml-accordingToContainer-lg md:max-w-[350px] md:self-end bg-dark_gray rounded-2xl p-6 order-2 mt-4 md:my-0  lg:absolute lg:bottom-0">
 							<h3 className="uppercase font-black mb-1 md:text-xl">we offer</h3>
 							<p className="text-xs md:text-sm max-w-[46ch]">
 								{item.description}
@@ -94,20 +113,20 @@ const SlidesFonctions = ({ slidesContent }: SlidesContentProps) => {
 								</div>
 							</Link>
 						</div>
-						<div className="w-full order-1 lg:min-h-[320px] ">
+						<div className="w-full order-1 lg:min-h-[320px]">
 							<Image
 								src={item.image}
 								alt={item.alt}
 								width={800}
 								height={534}
 								placeholder="blur"
-								className="object-cover rounded-2xl "
+								className="object-cover rounded-2xl"
 							/>
 						</div>
 					</div>
 				))}
 			</div>
-			<div className="flex md:justify-between justify-center    md:mt-12 items-center">
+			<div className="flex md:justify-between justify-center md:mt-12 items-center container">
 				<button
 					onClick={showPrevSlide}
 					className="invisible md:visible bg-crayola px-4 py-1 text-black rounded-lg font-bold"
@@ -118,16 +137,13 @@ const SlidesFonctions = ({ slidesContent }: SlidesContentProps) => {
 					{slidesContent.map((_, index) => (
 						<button
 							key={index}
-							onClick={() => {
-								setSlideIndex(index);
-							}}
-							className={` h-1 w-14 rounded-full ${
+							onClick={() => setSlideIndex(index)}
+							className={`h-1 w-14 rounded-full ${
 								activeSlide === index ? "bg-crayola" : "bg-light_gray"
 							}`}
 						></button>
 					))}
 				</div>
-
 				<button
 					onClick={showNextSlide}
 					className="invisible md:visible bg-crayola px-4 py-1 text-black rounded-lg font-bold"

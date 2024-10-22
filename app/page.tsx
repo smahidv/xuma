@@ -36,14 +36,13 @@ export default function Home() {
 				</div>
 
 				{/* Text Content */}
-				<div className=" flex justify-center items-center px-3 pt-[10dvh] md:p-0 z-10 lg:mt-28 ">
+				<div className=" flex justify-center items-center px-3 pt-[15dvh] md:p-0 z-10 lg:mt-28 ">
 					<div>
-						<h1 className="lg:text-6xl md:text-4xl text-2xl uppercase font-black">
-							you <br />
-							<span className="text-crayola">can</span> do it
+						<h1 className="lg:text-6xl md:text-4xl text-3xl uppercase font-black text-center md:text-left">							
+						<span className="md:block">you</span><span className="text-crayola"> can</span> do it
 						</h1>
 						<FontAwesomeIcon
-							className="text-2xl md:text-4xl text-crayola"
+							className="text-xl md:text-4xl text-crayola"
 							icon={faQuoteLeft}
 						/>
 						<p className="text-sm text-light_gray md:py-6 py-3 lg:min-w-[80ch] max-w-[65ch]">
@@ -53,10 +52,7 @@ export default function Home() {
 							space where you can train, relax, and enjoy memorable moments.
 							With us, you’re not just a customer; Xuma is your second home."
 						</p>
-						<div className="md:flex md:flex-row-reverse justify-between items-center space-y-4">
-							<button className="w-full md:w-fit font-black text-black bg-crayola capitalize md:px-btn-md-x md:py-btn-md-y  px-btn-sm-x py-btn-sm-y rounded-full hover:shadow-crayola_sm_shd">
-								become a member
-							</button>
+						<div className="md:flex md:flex-row-reverse justify-between my-4 items-center space-y-4">
 							<div className="flex gap-4 items-center justify-center rounded-full">
 								<div className="w-16">
 									<Image
@@ -73,10 +69,13 @@ export default function Home() {
 									<span>Founder</span>
 								</div>
 							</div>
+							<button className="w-full md:w-fit font-black text-black bg-crayola capitalize md:px-btn-md-x md:py-btn-md-y  px-btn-sm-x py-btn-sm-y rounded-full hover:shadow-crayola_sm_shd">
+								become a member
+							</button>
 						</div>
 						<div className="flex justify-end">
 							<FontAwesomeIcon
-								className="text-2xl md:text-4xl  text-crayola"
+								className="text-xl md:text-4xl  text-crayola"
 								icon={faQuoteRight}
 							/>
 						</div>
@@ -176,7 +175,7 @@ export default function Home() {
 					<PinkCircle className="-bottom-12 -left-12 invisible lg:visible " />
 				</div>
 			</section>
-			<section className="my-12  container  ">
+			<section className="my-12  ">
 				<SlidesFonctions slidesContent={slidesContent} />
 			</section>
 			<section className="my-12 mt-24 container grid md:grid-cols-2 gap-y-4 md:gap-x-10  ">
@@ -355,13 +354,13 @@ export default function Home() {
 							type="email"
 							name=""
 							id=""
-							className="outline-none px-2 py-1 md:px-6 md:py-3 rounded-md text-black  w-full placeholder:text-sm placeholder:md:text-base "
+							className="outline-none px-2 py-1 md:px-6 md:py-3 rounded-sm text-black  w-full placeholder:text-sm placeholder:md:text-base "
 							placeholder="E-mail"
 						/>
 						<div className="pt-6 xs:pt-0">
 						<button
 							type="button"
-							className="px-2 py-1 md:px-6 md:py-3 bg-crayola text-black rounded-md font-black"
+							className="px-btn-x py-btn-y bg-crayola text-black rounded-sm font-black"
 						>
 							Subscribe
 						</button>

@@ -24,7 +24,7 @@ export default function Header() {
 	return (
 		<header className="lg:px-14 md:pt-4 p-2 fixed top-0 bg-black z-30 w-full ">
 			<nav className="flex justify-between items-center ">
-				<Link href="/" className=" w-[90px] ">
+				<Link href="/" className=" w-[90px] md:w-[110px] ">
 					<Image
 						src={xuma}
 						alt="Logo"
@@ -46,7 +46,7 @@ export default function Header() {
 					className="space-y-8 lg:space-y-0 lg:flex gap-x-4 pt-24 lg:pt-0" />
 				</div>
 				<div className="flex md:gap-4 gap-1 items-center">
-					<button className="text-sm sm:text-base rounded-full bg-crayola text-black md:px-btn-md-x md:py-btn-md-y  px-btn-sm-x py-btn-sm-y font-black capitalize hover:shadow-crayola_shd">
+					<button className="text-sm sm:text-base rounded-full bg-crayola text-black  md:px-btn-md-x md:py-btn-md-y  px-btn-sm-x py-btn-sm-y font-black capitalize hover:shadow-crayola_shd">
 						subscribe
 					</button>
 					<button

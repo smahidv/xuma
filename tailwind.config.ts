@@ -36,10 +36,15 @@ const config: Config = {
         inner:' inset 0 0 10px #eeb3d2',
       },
       padding: {
-        'btn-sm-x': '0.33rem',
-        'btn-sm-y': '0.1rem',
+        'btn-sm-x': '0.45rem',
+        'btn-sm-y': '0.3rem',
         'btn-md-x': '1.5rem',
         'btn-md-y': '0.75rem',
+        'btn-x': '1rem',
+        'btn-y': '0.5rem',
+      },
+      margin:{
+        'accordingToContainer-lg':"4rem",
       },
       backgroundImage: {
         'hero-pattern': "url('/images/bgBlack.jpg')",
