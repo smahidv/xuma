@@ -10,12 +10,12 @@ import { faWhatsapp , faInstagram , faFacebook} from '@fortawesome/free-brands-s
 export default function Footer() {
 	return (
 		<footer className="container ">
-			<div className="flex justify-between flex-wrap gap-y-8 gap-x-2 py-8">
+			<div className="flex justify-between flex-wrap gap-y-4 gap-x-2 py-8">
 				<div className="self-center min-w-[150px] max-w-[200px] flex-1 ">
 					<Image src={xuma} alt="logo" width={274} height={53} />
 				</div>
 				<div className="flex justify-center flex-grow py-4">
-					<Navigation className="space-y-4" showMenuItem />
+					<Navigation className="space-y-4" showMenuItem  />
 				</div>
 				<div className="space-y-4 pl-4 md:pl-8 relative before:absolute before:left-0 before:top-0 before:w-[1px] before:h-full before:bg-gradient-to-b before:from-crayola before:to-purple_taupe ">
 					<h2 className="font-black md:text-4xl text-3xl ">Join us!</h2>
@@ -47,9 +47,9 @@ export default function Footer() {
 			</div>
 			<div className="border-t-[1px] border-light_gray pt-3 pb-6">
 				<p>Copyright © 2024 Xuma all rights reserved</p>
-				<div className="flex gap-2 ">
-				<FontAwesomeIcon icon={ faFacebook } className="size-6"/>
-				<FontAwesomeIcon icon={ faInstagram } className="size-6"/>
+				<div className="flex md:gap-4 ">
+				<FontAwesomeIcon icon={ faFacebook } size="lg"/>
+				<FontAwesomeIcon icon={ faInstagram } size="lg"/>
 				</div>
 			</div>
 		</footer>

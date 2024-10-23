@@ -93,7 +93,7 @@ export default function Home() {
 					/>
 				</div>
 			</section>
-			<section className="flex  p-2  animate-infinite-scroll  ">
+			<section className="flex my-12 p-2  animate-infinite-scroll  ">
 				{[...Array(2)].map((_, outerIndex) => (
 					<div key={outerIndex} className="flex gap-20 bg-purple_taupe px-20">
 						{sports.map((sport, id) => (
@@ -127,7 +127,7 @@ export default function Home() {
 				</p>
 				<div className=" mt-12 grid lg:grid-flow-col ">
 					<div>
-						<div className="uppercase font-black text-2xl w-fit mx-auto my-4 lg:text-7xl lg:w-full text-shadow text-black">
+						<div className="uppercase font-black text-3xl w-fit mx-auto my-4 lg:text-7xl lg:w-full text-shadow text-black">
 							Distinct
 						</div>
 						<div className="lg:relative lg:z-10 lg:translate-x-[6.5vw]  bg-purple_taupe py-4 pb-6 px-4 grid place-items-center lg:w-fit lg:py-10 lg:pb-14 lg:px-10">
@@ -148,7 +148,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="lg:grid -order-1 lg:order-1">
-						<div className="uppercase font-black text-2xl w-fit mx-auto my-4 lg:text-7xl lg:justify-self-end lg:mx-0  text-shadow text-black">
+						<div className="uppercase font-black text-3xl w-fit mx-auto my-4 lg:text-7xl lg:justify-self-end lg:mx-0  text-shadow text-black">
 							Different
 						</div>
 						<div className="relative w-full lg:-order-1 ">
@@ -158,7 +158,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="md:my-24 my-12 bg-hero-pattern bg-bottom bg-cover   ">
+			<section className="md:mt-24 my-12 bg-hero-pattern bg-bottom bg-cover   ">
 				<div className="relative container max-w-[700px] bg-dark_gray  py-4  px-4  lg:py-10 lg:px-10">
 					<h3 className="font-black mb-3 uppercase lg:text-3xl lg:justify-self-start">
 						An environment
@@ -175,7 +175,7 @@ export default function Home() {
 					<PinkCircle className="-bottom-12 -left-12 invisible lg:visible " />
 				</div>
 			</section>
-			<section className="my-12  ">
+			<section className="my-12 md:my-24 container lg:mt-32   ">
 				<SlidesFonctions slidesContent={slidesContent} />
 			</section>
 			<section className="my-12 mt-24 container grid md:grid-cols-2 gap-y-4 md:gap-x-10  ">

@@ -38,12 +38,13 @@ export default function Header() {
 					className={`ul-container self-center flex justify-center overflow-auto  ${
 						isMenuOpen 
 							? "absolute z-20 top-0 left-0 bg-black h-screen w-full  opacity-100  transition-[opacity] duration-500 "
-							: " h-0  opacity-0 lg:block "
+							: " h-0  opacity-0 lg:block lg:opacity-100"
 					}`}
 				>
 					<Navigation 
 					toggleMenu={toggleMenu}
-					className="space-y-8 lg:space-y-0 lg:flex gap-x-4 pt-24 lg:pt-0" />
+					className="space-y-8 lg:space-y-0 lg:flex gap-x-4 pt-24 lg:pt-0"
+					 />
 				</div>
 				<div className="flex md:gap-4 gap-1 items-center">
 					<button className="text-sm sm:text-base rounded-full bg-crayola text-black  md:px-btn-md-x md:py-btn-md-y  px-btn-sm-x py-btn-sm-y font-black capitalize hover:shadow-crayola_shd">

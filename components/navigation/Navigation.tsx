@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import { navItems } from "@/constants";
 import "./navigation.css";
+import useIsMobile from "@/hooks/useIsMobile"
 
 interface NavigationProps {
   className?: string;
@@ -14,7 +15,8 @@ interface NavigationProps {
 
 const Navigation = ({ className,showMenuItem= false,toggleMenu  } : NavigationProps) => {
     const currentPath = usePathname();
-   
+    const isMobile = useIsMobile();
+
   return (
 
       <ul className={className}>
@@ -24,8 +26,8 @@ const Navigation = ({ className,showMenuItem= false,toggleMenu  } : NavigationPr
         {navItems.map((item) => (
           <li key={item.name} className={`${currentPath === item.href ? "after:bg-crayola" : ""} `}>
             <Link href={item.href} 
-             onClick={toggleMenu} 
-            className={`${currentPath === item.href ? "text-crayola" : ""} `}
+            onClick={isMobile ? toggleMenu : undefined}
+            className={`lg:hover:text-crayola lg:transition-colors lg:duration-400 ${currentPath === item.href ? "text-crayola" : ""} `}
              >
              {item.name}
             </Link>
