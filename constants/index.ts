@@ -98,7 +98,7 @@ export const pricing = [
       "From 8 a.m. to 8 p.m.",
       "Supervised children's area",
       "Fitness classes designed for kids",
-      "Access to kid-friendly sports activities"
+      "kid-friendly sports activities"
     ]
   }
 ];

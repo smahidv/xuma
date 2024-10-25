@@ -28,7 +28,7 @@ const Subscription = () => {
 						<button
 							type="button"
 							onClick={() => toggleButton("monthly")}
-							className={`font-bold rounded-full text-sm sm:text-base transition-colors  ${
+							className={`font-bold rounded-full text-sm sm:text-base transition-colors duration-500 ${
 								activePlan === "monthly"
 									? "sm:py-2.5 py-1.5 sm:px-4 px-2 bg-purple_taupe "
 									: ""
@@ -50,11 +50,11 @@ const Subscription = () => {
 					</div>
 				</div>
 			</div>
-			<div className="space-y-4 md:space-y-8 lg:space-y-0 lg:flex lg:justify-center lg:gap-y-6 lg:gap-x-8  ">
+			<div className="space-y-4 md:space-y-8 lg:space-y-0 flex flex-wrap lg:justify-center lg:gap-y-6 lg:gap-x-8  ">
 				{pricing.map((item, index) => (
 					<div
 						key={index}
-						className={`relative  lg:w-[31%] w-full  rounded-3xl  ${
+						className={`relative  lg:w-[31%] w-full  rounded-xl  ${
 							item.bestDeal
 								? "md:pt-[60px] pt-[40px] p-[2px] lg:-translate-y-[60px] from-crayola to-purple_taupe  bg-gradient-to-tl"
 								: "flex-shrink h-fit p-[1.2px] bg-crayola"
@@ -70,7 +70,7 @@ const Subscription = () => {
 								<span className="font-bold">Best Deal</span>
 							</div>
 						)}
-						<div className="w-full h-full bg-black  rounded-3xl p-4 pb-6 md:p-6 space-y-6">
+						<div className="w-full h-full bg-black  rounded-xl p-6 md:py-6   space-y-6">
 							<h2 className="md:text-3xl text-xl uppercase font-black">{item.title}</h2>
 							<div>
 								<span className="md:text-3xl text-xl font-black">
@@ -81,7 +81,7 @@ const Subscription = () => {
 								</span>
 							</div>
 							<p className="max-w-[40ch] text-sm md:text-base">{item.description}</p>
-							<button className="w-full bg-purple_taupe md:px-2 md:py-1 px-1 py-0.5 rounded-lg from-crayola to-purple_taupe p-[1.2px] bg-gradient-to-l ">
+							<button className="hover:shadow-crayola_sm_shd w-full bg-purple_taupe md:px-2 md:py-1 px-1 py-0.5 rounded-lg from-crayola to-purple_taupe p-[1.2px] bg-gradient-to-l ">
 								<Link href="#" className="font-bold text-sm md:text-base">Subscripe</Link>
 							</button>
 							<div className="center gap-4 pb-2 pt-1 ">

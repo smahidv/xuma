@@ -38,7 +38,7 @@ export default function Header() {
 					className={`ul-container self-center flex justify-center overflow-auto  ${
 						isMenuOpen 
 							? "absolute z-20 top-0 left-0 bg-black h-screen w-full  opacity-100  transition-[opacity] duration-500 "
-							: " h-0  opacity-0 lg:block lg:opacity-100"
+							: " h-0  opacity-0 lg:block lg:opacity-100 transition-[opacity] duration-1500"
 					}`}
 				>
 					<Navigation 

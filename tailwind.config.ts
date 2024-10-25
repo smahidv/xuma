@@ -53,12 +53,19 @@ const config: Config = {
       },
       animation: {
         "infinite-scroll": "infinite-scroll 20s linear infinite",
+        "rotate-text":"rotate-text 20s linear infinite",
+
       },
       keyframes: {
         "infinite-scroll": {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
         },
+        "rotate-text": {
+          from: { transform: "rotate(0)" },
+          to: { transform: "rotate(360deg)" },
+        },
+   
       },
     },
   },
