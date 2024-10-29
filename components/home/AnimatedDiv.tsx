@@ -23,7 +23,7 @@ const AnimatedDiv: FC<AnimatedDivProps> = ({
 	const ref = useRef<HTMLDivElement | null>(null);
 
 	
-	const isInView = useInView(ref, { amount:0.4});
+	const isInView = useInView(ref, { amount:0.4,once:true});
 	const selectedVariant = animationVariants[animationType];
 	return (
 		<div 
@@ -31,7 +31,7 @@ const AnimatedDiv: FC<AnimatedDivProps> = ({
 		 >
 			<motion.div
 				initial="hidden"
-				animate={isInView && "visible"}
+				animate={isInView ? "visible" : "hidden"}
 				variants={selectedVariant}
 			
 			>
