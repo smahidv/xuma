@@ -20,7 +20,6 @@ const Subscription = () => {
 		if (!isMobi) {
 			if (item.isLeft) return "fadeLeft";
 			if (item.bestDeal) return "fadeUp";
-			return "fadeRight";
 		} else {
 			return item.bestDeal ? "fadeRight" : "fadeLeft";
 		}

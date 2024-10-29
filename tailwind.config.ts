@@ -68,9 +68,10 @@ const config: Config = {
         },
         "arrow": {
           "0%": { transform: "translateX(0)" },
-          "50%": { transform: "translateX(6px)" },
+          "25%": { transform: "translateX(3px)" },
+          "50%": { transform: "translateX(0px)" },
+          "75%": { transform: "translateX(-3px)" },
           "100%": { transform: "translateX(0)" }
-
         },
 
 

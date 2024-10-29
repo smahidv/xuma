@@ -47,7 +47,7 @@ export default function Footer() {
 			</div>
 			<div className="border-t-[1px] border-light_gray pt-3 pb-6">
 				<p>Copyright © 2024 Xuma all rights reserved</p>
-				<div className="flex md:gap-4 ">
+				<div className="flex gap-2 ">
 				<FontAwesomeIcon icon={ faFacebook } size="lg"/>
 				<FontAwesomeIcon icon={ faInstagram } size="lg"/>
 				</div>
