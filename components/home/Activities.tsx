@@ -10,7 +10,8 @@ import AnimatedDiv from "./AnimatedDiv";
 export default function Activities() {
 	return (
 		<section className="my-12 mt-24 container grid md:grid-cols-2 gap-y-4 md:gap-x-10  ">
-			<AnimatedDiv animationType="rotateY3D" className="relative">
+			<div className="relative">
+			<AnimatedDiv animationType="rotateY3D" >
 				<div className="w-full">
 					<Image
 						src={activities}
@@ -26,18 +27,20 @@ export default function Activities() {
 					<div className="w-4 md:w-10">
 						<Image src={symbol} alt="xuma symbom" />
 					</div>
-					<div className="center">
+					<div className="center group">
 						<Link href="#">
 							<span className="font-bold md:text-lg">Discover</span>
 							<FontAwesomeIcon
 								icon={faArrowRight}
-								className="text-white size-10 "
+								className="text-white size-10 group-hover:animate-arrow "
 							/>
 						</Link>
 					</div>
 				</div>
 			</AnimatedDiv>
-			<AnimatedDiv className="relative" animationType="rotateY3D">
+			</div>
+			<div className="relative">
+			<AnimatedDiv  animationType="rotateY3D">
 				<div className="w-full">
 					<Image src={spaces} alt="discover our spaces" placeholder="blur" />
 				</div>
@@ -49,17 +52,18 @@ export default function Activities() {
 					<div className="w-4 md:w-10">
 						<Image src={symbol} alt="xuma symbom" />
 					</div>
-					<div className="center">
+					<div className="center group">
 						<Link href="#">
 							<span className="font-bold md:text-lg">Discover</span>
 							<FontAwesomeIcon
 								icon={faArrowRight}
-								className="text-white size-10 "
+								className="text-white size-10 group-hover:animate-arrow"
 							/>
 						</Link>
 					</div>
 				</div>
 			</AnimatedDiv>
+			</div>
 		</section>
 	);
 }

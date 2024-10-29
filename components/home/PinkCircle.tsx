@@ -19,7 +19,7 @@ export default function PinkCircle({ className }: CircleProps) {
 		style={{
 			scale: isInView ? "none" : "0.5",
 			opacity: isInView ? 1 : 0,
-			transition: "all 1.5s linear "
+			transition: "all 1.2s ease-in "
 		  }}
 		className={` absolute shadow-crayola_sm_shd size-12  sm:size-24 rounded-full bg-purple_taupe text-black center ${className}`}>
 			<div className="absolute sm:size-[3rem] size-6">

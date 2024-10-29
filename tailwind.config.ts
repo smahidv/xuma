@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       screens: {
         'xs': '450px',
-        'iPad': {'raw': '(min-height: 1024px)'},
+        'iPad': { 'raw': '(min-height: 1024px)' },
       },
       fontFamily: {
         avenir: 'var(--font-avenir)',
@@ -33,7 +33,7 @@ const config: Config = {
       boxShadow: {
         crayola_shd: '0 0 20px #eeb3d2',
         crayola_sm_shd: '0 0 20px  #79506b',
-        inner:' inset 0 0 10px #eeb3d2',
+        inner: ' inset 0 0 10px #eeb3d2',
       },
       padding: {
         'btn-sm-x': '0.45rem',
@@ -43,18 +43,18 @@ const config: Config = {
         'btn-x': '1rem',
         'btn-y': '0.5rem',
       },
-      margin:{
-        'accordingToContainer-lg':"4rem",
+      margin: {
+        'accordingToContainer-lg': "4rem",
       },
       backgroundImage: {
         'hero-pattern': "url('/images/bgBlack.jpg')",
-        'hero-pattern-gray':"url('/images/bgGray.jpg')"
-        
+        'hero-pattern-gray': "url('/images/bgGray.jpg')"
+
       },
       animation: {
         "infinite-scroll": "infinite-scroll 20s linear infinite",
-        "rotate-text":"rotate-text 20s linear infinite",
-
+        "rotate-text": "rotate-text 20s linear infinite",
+        "arrow": "arrow 1s linear  infinite",
       },
       keyframes: {
         "infinite-scroll": {
@@ -63,9 +63,18 @@ const config: Config = {
         },
         "rotate-text": {
           from: { transform: "rotate(0)" },
-          to: { transform: "rotate(360deg)" },
+          to:
+            { transform: "rotate(360deg)" },
         },
-   
+        "arrow": {
+          "0%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(6px)" },
+          "100%": { transform: "translateX(0)" }
+
+        },
+
+
+
       },
     },
   },

@@ -63,15 +63,15 @@ export const sports = [
 
 export const pricing = [
   {
-    bestDeal: false,
+    isLeft:true,
     title: "Fitness Pass",
     monthPrice: "150",
     yearPrice: "2990",
     description: "Access to fitness facilities and group activities, including specialized zones.",
     features: [
       "From 6 a.m. to 11 p.m.",
-      "Mixed and 100% women's fitness area",
-      "Additional activities by reservation",
+      "100% women's fitness area",
+      "Additional activities ",
       "Fight area"
     ]
   },
@@ -89,7 +89,7 @@ export const pricing = [
     ]
   },
   {
-    bestDeal: false,
+    isLeft:false,
     title: "Kids Pass",
     monthPrice: "100",
     yearPrice: "1990",

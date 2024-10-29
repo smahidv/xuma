@@ -7,12 +7,14 @@ import symbol from "@/public/images/symbol.png";
 import SlidesFonctions from "@/components/home/SlidesFonctions";
 import { slidesContent } from "@/constants";
 import Subscription from "@/components/home/Subscription";
-import megaphone from "@/public/images/megaphone.png";
+
 import Chevron from "@/components/home/Chevron";
 import Concept from "@/components/home/Concept";
 import Environement from "@/components/home/Environement";
 import Activities from "@/components/home/Activities";
 import Contact from "@/components/home/Contact";
+
+import Hiring from "@/components/home/hiring/Hiring";
 
 export default function Home() {
 	return (
@@ -88,7 +90,7 @@ export default function Home() {
 					/>
 				</div>
 			</section>
-			<section className="flex my-12 p-2  animate-infinite-scroll  ">
+			<section className="flex my-12 md:my-0 p-2  animate-infinite-scroll  ">
 				{[...Array(2)].map((_, outerIndex) => (
 					<div key={outerIndex} className="flex gap-20 bg-purple_taupe px-20">
 						{sports.map((sport, id) => (
@@ -117,11 +119,13 @@ export default function Home() {
 					</h2>
 					<div className="w-[5rem] bg-crayola h-[2px]"></div>
 				</div>
-				<p className="text-light_gray max-w-[48ch] ml-[38px] md:ml-[66px] ">
-					At Xuma, we believe everyone deserves support no matter your skill
-					level, age, or gender. We provide the tools and resources to help you
-					unlock your full potential."
-				</p>
+				<p 
+			
+			className="text-light_gray max-w-[48ch] ml-[38px] md:ml-[66px] ">
+						At Xuma, we believe everyone deserves support no matter your skill
+						level, age, or gender. We provide the tools and resources to help you
+						unlock your full potential."
+					</p>
 				<Concept />
 			</section>
 			<section className="md:mt-24 my-12 bg-hero-pattern bg-bottom bg-cover   ">
@@ -147,24 +151,11 @@ export default function Home() {
 				</div>
 				<Subscription />
 			</section>
-			{/* <section className="my-24 container ">
-				<div className="      py-4  px-4  lg:py-10 lg:px-10 text-center ">
-					<h2 className="font-black  sm:text-3xl md:text-4xl text-xl uppercase">
-						we are hiring
-					</h2>
-					<div className="my-28 relative grid justify-center">
-						<div className="rounded-full outline-purple_taupe outline-8 outline size-[100px]  "></div>
-						<div className="absolute   top-0 size-[200px] left-1/2 -translate-x-1/2 -translate-y-[100px]">
-						<Image width={250} height={250} className="rounded-full  " src={megaphone} alt="person holding megaphone" />
-						</div>
-					</div>
-					<button className="bg-purple_taupe px-12 py-3 rounded-md w-fit  font-bold md:text-xl">
-						<Link href="#">Apply</Link>
-					</button>
-				</div>
-			</section> */}
+			<section className="my-12 container ">
+			<Hiring/>
+			</section> 
 			<section className="pb-12 mt-12 md:mt-0">
-				<Contact/>
+				<Contact />
 			</section>
 			<section className="container my-16 xs:flex justify-center   ">
 				<div className=" text-center">
