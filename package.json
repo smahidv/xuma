@@ -17,9 +17,11 @@
     "@heroicons/react": "^2.1.5",
     "@next/bundle-analyzer": "^14.2.15",
     "framer-motion": "^11.11.9",
+    "lenis": "^1.1.14",
     "next": "14.2.14",
     "react": "^18",
     "react-dom": "^18",
+    "react-responsive": "^10.0.0",
     "swiper": "^11.1.14"
   },
   "devDependencies": {

@@ -16,13 +16,13 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	/* border: 1px solid lime; */
 }
 
 * {
 	margin: 0;
 	padding: 0;
 }
-
 html,
 body {
 	overflow-x: hidden;
@@ -50,12 +50,7 @@ li {
 	text-wrap: pretty;
 	overflow-wrap: break-word;
 }
-img,
-video,
-svg {
-	display: block;
-	max-width: 100%;
-}
+
 
 .center {
 	display: flex;

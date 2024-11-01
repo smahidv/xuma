@@ -2,6 +2,20 @@ import coach from "@/public/images/coach.jpg";
 import groupTraining from "@/public/images/groupTraining.jpg";
 import pool from "@/public/images/pool.jpg";
 import weightRoom from "@/public/images/weightRoom.jpg";
+import BodyBuilding from "@/public/images/BodyBuilding.jpg";
+import Cardio from "@/public/images/Cardio.jpg";
+import Classrooms from "@/public/images/Classrooms.jpg"
+import CrossTraining from "@/public/images/CrossTraining.jpg"
+import Weights from "@/public/images/Weights.jpg"
+import womenSpaces from "@/public/images/womenSpace.jpg"
+import trainingImage from "@/public/images/training.jpg";
+import weightliftingImage from "@/public/images/weightlifting.jpg";
+import fitnessTrainingImage from "@/public/images/fitnessTraining.jpg";
+import groupClassesImage from "@/public/images/groupClasses.jpg";
+import kickboxingImage from "@/public/images/kickboxing.jpg";
+import mmaImage from "@/public/images/mma.jpg";
+import kidsFightingImage from "@/public/images/kidsFighting.jpg";
+import padelImage from "@/public/images/padel.jpg";
 
 
 export const slidesContent = [
@@ -102,3 +116,104 @@ export const pricing = [
     ]
   }
 ];
+
+export const gymSpaces = [
+
+  {
+    title: "Guided Bodybuilding",
+    description: "For those focused on muscle growth, our guided bodybuilding section offers state-of-the-art machines that provide precise support for varied and effective muscle work. Each piece of equipment has been carefully selected to enhance your training experience and help you achieve your bodybuilding aspirations.",
+    alt: "Guided bodybuilding area",
+    image:BodyBuilding
+  },
+  {
+    title: "Cardio",
+    description: "Our cardio area is designed to offer a unique and invigorating training experience. Equipped with the latest connected cardio machines, including treadmills, ellipticals, bikes, and stair climbers, you'll find everything you need to improve your cardiovascular fitness and achieve your health goals, all while enjoying a motivating atmosphere.",
+    alt: "Cardio area",
+    image:Cardio
+  },
+  
+  {
+    title: "Only for women",
+    description: "Dedicated space designed specifically to meet the needs of women who want to train in a supportive and empowering environment. Here, you'll find a variety of equipment and classes tailored to help you reach your fitness goals while connecting with a community of like-minded individuals.",
+    alt: "Women-only training area",
+    image:womenSpaces
+  },
+  {
+    title: "Classrooms",
+    description: "Join our diverse group classes in our mixed and 100% women-specific classrooms. With a musical atmosphere that encourages community and support, you'll be motivated to push your limits, have fun, and make lasting connections with fellow fitness enthusiasts.",
+    alt: "Group classes area",
+    image:Classrooms
+  },
+  {
+    title: "Strength and Free Weights",
+    description: "Our fitness area features an extensive selection of guided machines and free weights to facilitate effective muscle development for your entire body. Whether you're a beginner or an experienced lifter, our knowledgeable staff is here to assist you in perfecting your form and maximizing your workouts.",
+    alt: "Strength and free weights area",
+    image:Weights
+  },
+  {
+    title: "Cross Training",
+    description: "This area is designed for versatile workouts that combine strength, endurance, and agility. Our cross training space offers a variety of equipment and stations to challenge your body in new ways, ensuring you stay motivated and engaged in your fitness journey.",
+    alt: "Cross training area",
+    image:CrossTraining
+  },
+
+];
+export const gymActivities = [
+  {
+    title: "Cross Training",
+    howWeHelp: "High-energy WODs for a full-body workout that boosts endurance and strength.",
+    bestFor: "Those looking for a versatile workout with cardio and strength components.",
+    alt: "Cross Training",
+    image: trainingImage
+  },
+  {
+    title: "Weightlifting",
+    howWeHelp: "Personalized sessions focusing on strength, balance, and safety techniques.",
+    bestFor: "Individuals aiming to build muscle and increase power.",
+    alt: "Weightlifting",
+    image: weightliftingImage
+  },
+  {
+    title: "Fitness",
+    howWeHelp: "Comprehensive cardio and strength equipment to help reach fitness goals.",
+    bestFor: "Anyone aiming to improve overall health and stay active.",
+    alt: "Fitness",
+    image: fitnessTrainingImage
+  },
+  {
+    title: "Group Classes",
+    howWeHelp: "Engaging group sessions in cardio, endurance, dance, and relaxation.",
+    bestFor: "Those who enjoy a social workout with guided exercises.",
+    alt: "Group Classes",
+    image: groupClassesImage
+  },
+  {
+    title: "Kickboxing",
+    howWeHelp: "Practice striking techniques with classes and solo training options.",
+    bestFor: "Individuals focused on improving combat skills and agility.",
+    alt: "Kickboxing",
+    image: kickboxingImage
+  },
+  {
+    title: "MMA",
+    howWeHelp: "Complete training that combines stand-up and ground fighting skills.",
+    bestFor: "Fighters looking to expand their skill set with mixed martial arts.",
+    alt: "MMA",
+    image: mmaImage
+  },
+  {
+    title: "Kids Fighting",
+    howWeHelp: "A safe program that teaches discipline, respect, and self-control.",
+    bestFor: "Children developing confidence, coordination, and self-discipline.",
+    alt: "Kids Fighting",
+    image: kidsFightingImage
+  },
+  {
+    title: "Padel",
+    howWeHelp: "Fun, dynamic sport with accessible gameplay for all ages.",
+    bestFor: "Beginners and casual players seeking a social, active experience.",
+    alt: "Padel",
+    image: padelImage
+  }
+]
+

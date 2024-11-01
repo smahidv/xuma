@@ -1,6 +1,6 @@
-import { useRef, FC, ReactNode, useEffect, useState } from "react";
-import { useInView, useScroll } from "framer-motion";
-import { motion } from "framer-motion";
+import { useRef, FC, ReactNode } from "react";
+import { useInView } from "framer-motion";
+import { motion  } from "framer-motion";
 import { animationVariants } from "@/motion/AnimationList";
 
 

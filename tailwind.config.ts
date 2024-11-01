@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+
       screens: {
         'xs': '450px',
         'iPad': { 'raw': '(min-height: 1024px)' },

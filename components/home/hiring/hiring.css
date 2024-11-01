@@ -3,7 +3,7 @@
     content: "";
     position: absolute;
     border-radius: 50%;
-    border: 1px solid var(--purple-taupe); 
+    border: 1.5px solid var(--purple-taupe); 
     inset:0;
     width: 100%;
     height: 100%;

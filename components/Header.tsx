@@ -5,9 +5,11 @@ import xuma from "@/public/images/logo.png";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Navigation from "@/components/navigation/Navigation";
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const currentPath = usePathname();
 
 	function toggleMenu() {
 		setIsMenuOpen(!isMenuOpen);
@@ -22,7 +24,7 @@ export default function Header() {
 	
 
 	return (
-		<header className="lg:px-14 md:pt-4 p-2 fixed top-0 bg-black z-30 w-full ">
+		<header className={`lg:px-14 md:pt-4 p-2   bg-black z-30 w-full ${currentPath === "/" ? "fixed top-0" : ""} ` }>
 			<nav className="flex justify-between items-center ">
 				<Link href="/" className=" w-[90px] md:w-[110px] ">
 					<Image

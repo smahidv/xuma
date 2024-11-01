@@ -7,19 +7,17 @@ import symbol from "@/public/images/symbol.png";
 import SlidesFonctions from "@/components/home/SlidesFonctions";
 import { slidesContent } from "@/constants";
 import Subscription from "@/components/home/Subscription";
-
 import Chevron from "@/components/home/Chevron";
 import Concept from "@/components/home/Concept";
 import Environement from "@/components/home/Environement";
 import Activities from "@/components/home/Activities";
 import Contact from "@/components/home/Contact";
-
 import Hiring from "@/components/home/hiring/Hiring";
 
 export default function Home() {
 	return (
 		<div>
-			<section className="relative flex md:h-[90dvh] md:pb-4 pt-4  overflow-hidden justify-center items-center  ">
+			<section className="relative flex md:h-[90dvh] md:pb-4 pt-4  justify-center items-center  ">
 				{/* Left Circle Image */}
 				<div className="animate-rotate-cercle-left hidden  iPad:w-[260px]  lg:w-[300px] md:w-[200px] md:inline-flex absolute left-0 bottom-10 -translate-x-[30%] ">
 					<Image
@@ -80,7 +78,7 @@ export default function Home() {
 				</div>
 
 				{/* Right Circle Image */}
-				<div className="animate-rotate-cercle-right hidden iPad:w-[260px]  lg:w-[300px] md:w-[200px] md:inline-flex absolute right-0  md:top-24  translate-x-[34%] scale-[-1] ">
+				<div className="animate-rotate-cercle-right   hidden iPad:w-[260px]  lg:w-[300px] md:w-[200px] md:inline-flex absolute right-0  md:top-24  translate-x-[34%] scale-[-1] ">
 					<Image
 						src={leftCercle}
 						alt="left cercle"
@@ -90,7 +88,7 @@ export default function Home() {
 					/>
 				</div>
 			</section>
-			<section className="flex my-12 md:my-0 p-2  animate-infinite-scroll  ">
+			<section className="flex my-12 md:my-0 p-2  animate-infinite-scroll   ">
 				{[...Array(2)].map((_, outerIndex) => (
 					<div key={outerIndex} className="flex gap-20 bg-purple_taupe px-20">
 						{sports.map((sport, id) => (
