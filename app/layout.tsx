@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header, Footer } from "@/components";
+
 import localFont from "next/font/local";
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-config.autoAddCss = false
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { ActivityOverlayProvider} from '@/hooks/ActivityOverlayContext';
+import ManageOverlayState from "./utils/ManageOverlayState";
+
+
+config.autoAddCss = false;
 
 const avenir = localFont({
   src: [
@@ -15,7 +19,7 @@ const avenir = localFont({
     },
     {
       path: "../public/fonts/AvenirLTStd-Heavy.otf",
-      weight: "700", 
+      weight: "700",
       style: "normal",
     },
     {
@@ -33,18 +37,21 @@ export const metadata: Metadata = {
     "FITNESS · Cardio-Training · MMA · Boxing · Kickboxing · BODYBUILDING · FITNESS · Cardio-Training.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${avenir.variable} font-avenir `}>
-      <body>
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+   
+      <html lang="en">
+        <body className={`${avenir.variable} font-avenir relative`}>
+        <ActivityOverlayProvider>
+        <ManageOverlayState>
+          {children}
+          </ManageOverlayState>
+          </ActivityOverlayProvider>
+        </body>
+      </html>
+   
   );
 }
+
+
+

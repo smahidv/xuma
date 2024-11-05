@@ -1,13 +1,9 @@
-"use client";
 import Activity from "@/components/activities/Activity";
-import { gymActivities } from "@/constants/index";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/effect-fade";
-import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules";
+import SwiperClient from "@/components/activities/SwiperClient";
+
 export default function activities() {
 	return (
-		<main className="my-12   ">
+		<main className="py-12 mt-[10vh]  ">
 			<div className=" my-24 text-center container">
 				<h2 className="font-black text-xl md:text-4xl">OUR ACTIVITIES</h2>
 				<div className="text-crayola text-center text-sm md:text-base font-bold">
@@ -32,29 +28,7 @@ export default function activities() {
 					<div className="text-lg md:text-base">Machinery and equipment</div>
 				</div>
 			</div>
-			<div className="flex h-screen justify-center items-center">
-			<Swiper
-				spaceBetween={20}
-				slidesPerView={1.5}
-				initialSlide={3} 
-				centeredSlides={true}
-				breakpoints={{
-					480: {
-					  slidesPerView: 2.5,
-					},
-					1024: {
-					  slidesPerView: 3.5,
-					},
-				  }}
-
-			>
-				{gymActivities.map((activity, index) => (
-					<SwiperSlide key={index} className="flex-grow flex-shrink-0">
-						<Activity i={index} {...activity} />
-					</SwiperSlide>
-				))}
-			</Swiper>
-			</div>
+			<SwiperClient/>
 		</main>
 	);
 }

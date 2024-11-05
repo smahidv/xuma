@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import xuma from "@/public/images/logo.png";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Navigation from "@/components/navigation/Navigation";
@@ -14,17 +14,18 @@ export default function Header() {
 	function toggleMenu() {
 		setIsMenuOpen(!isMenuOpen);
 		if (!isMenuOpen) {
-		  document.body.style.overflow = 'hidden';
-		  document.body.style.height = '100vh';
+		  document.body.style.overflowY = 'hidden';
+		  document.body.style.maxHeight = '100vh';
 		} else {
-		  document.body.style.overflow = ''; 
-		  document.body.style.height = '';
+		  document.body.style.overflowY = ''; 
+		  document.body.style.maxHeight = '';
 		}
 	  }
+
 	
 
 	return (
-		<header className={`lg:px-14 md:pt-4 p-2   bg-black z-30 w-full ${currentPath === "/" ? "fixed top-0" : ""} ` }>
+		<header className="lg:px-14 md:pt-4 p-2   bg-black z-30 w-full fixed top-0">
 			<nav className="flex justify-between items-center ">
 				<Link href="/" className=" w-[90px] md:w-[110px] ">
 					<Image

@@ -13,9 +13,11 @@ import weightliftingImage from "@/public/images/weightlifting.jpg";
 import fitnessTrainingImage from "@/public/images/fitnessTraining.jpg";
 import groupClassesImage from "@/public/images/groupClasses.jpg";
 import kickboxingImage from "@/public/images/kickboxing.jpg";
-import mmaImage from "@/public/images/mma.jpg";
+import MmaImage from "@/public/images/Mma.jpg";
 import kidsFightingImage from "@/public/images/kidsFighting.jpg";
 import padelImage from "@/public/images/padel.jpg";
+import symbol from "@/public/images/symbol.png"
+import { title } from "process";
 
 
 export const slidesContent = [
@@ -161,59 +163,85 @@ export const gymSpaces = [
 export const gymActivities = [
   {
     title: "Cross Training",
-    howWeHelp: "High-energy WODs for a full-body workout that boosts endurance and strength.",
+    whatWeOffer: "High-energy WODs for a full-body workout that boosts endurance and strength.",
     bestFor: "Those looking for a versatile workout with cardio and strength components.",
     alt: "Cross Training",
     image: trainingImage
   },
   {
     title: "Weightlifting",
-    howWeHelp: "Personalized sessions focusing on strength, balance, and safety techniques.",
+    whatWeOffer: "Personalized sessions focusing on strength, balance, and safety techniques.",
     bestFor: "Individuals aiming to build muscle and increase power.",
     alt: "Weightlifting",
     image: weightliftingImage
   },
   {
-    title: "Fitness",
-    howWeHelp: "Comprehensive cardio and strength equipment to help reach fitness goals.",
-    bestFor: "Anyone aiming to improve overall health and stay active.",
-    alt: "Fitness",
-    image: fitnessTrainingImage
+    title: "Kickboxing",
+    whatWeOffer: "Practice striking techniques with classes and solo training options.",
+    bestFor: "Individuals focused on improving combat skills and agility.",
+    alt: "Kickboxing",
+    image: kickboxingImage
   },
+
   {
     title: "Group Classes",
-    howWeHelp: "Engaging group sessions in cardio, endurance, dance, and relaxation.",
+    whatWeOffer: "Engaging group sessions in cardio, endurance, dance, and relaxation.",
     bestFor: "Those who enjoy a social workout with guided exercises.",
     alt: "Group Classes",
     image: groupClassesImage
   },
   {
-    title: "Kickboxing",
-    howWeHelp: "Practice striking techniques with classes and solo training options.",
-    bestFor: "Individuals focused on improving combat skills and agility.",
-    alt: "Kickboxing",
-    image: kickboxingImage
+    title: "Fitness",
+    whatWeOffer: "Comprehensive cardio and strength equipment to help reach fitness goals.",
+    bestFor: "Anyone aiming to improve overall health and stay active.",
+    alt: "Fitness",
+    image: fitnessTrainingImage
   },
   {
     title: "MMA",
-    howWeHelp: "Complete training that combines stand-up and ground fighting skills.",
+    whatWeOffer: "Complete training that combines stand-up and ground fighting skills.",
     bestFor: "Fighters looking to expand their skill set with mixed martial arts.",
     alt: "MMA",
-    image: mmaImage
+    image: MmaImage
   },
   {
     title: "Kids Fighting",
-    howWeHelp: "A safe program that teaches discipline, respect, and self-control.",
+    whatWeOffer: "A safe program that teaches discipline, respect, and self-control.",
     bestFor: "Children developing confidence, coordination, and self-discipline.",
     alt: "Kids Fighting",
     image: kidsFightingImage
   },
   {
     title: "Padel",
-    howWeHelp: "Fun, dynamic sport with accessible gameplay for all ages.",
+    whatWeOffer: "Fun, dynamic sport with accessible gameplay for all ages.",
     bestFor: "Beginners and casual players seeking a social, active experience.",
     alt: "Padel",
     image: padelImage
   }
+]
+
+export const xumaLocations = [
+{
+  symbolImage:symbol,
+  title:"casablanca",
+  address:"58 rue California",
+  phone:"+212 6 22 22 22 22",
+  image:CrossTraining,
+  
+},
+{
+  symbolImage:symbol,
+  title:"benslimane",
+  address:"20 rue Zerktouni",
+  phone:"+212 6 22 22 22 22",
+  image:Classrooms
+},
+{
+  symbolImage:symbol,
+  title:"agadir",
+  address:"54 rue lina",
+  phone:"+212 6 22 22 22 22",
+  image:Cardio
+}
 ]
 

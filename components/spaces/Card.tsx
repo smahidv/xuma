@@ -34,7 +34,7 @@ export default function Card({
 	return (
 		<div
 			ref={container}
-			className=" pt-16  sticky top-0 max-w-[1000px] mx-auto    "
+			className=" pt-16  sticky top-[10vh] max-w-[1000px] mx-auto    "
 		>
 			<motion.div
 				style={{ top: `calc(-${i + 9}vh + ${i * 40}px)`, scale }}
@@ -55,7 +55,7 @@ export default function Card({
 					<div className=" md:basis-[40%] md:-order-1 ">
 						<div className="flex gap-4 items-end  font-bold pb-3  ">
 						<div className="md:text-6xl  text-3xl   text-crayola ">0{i + 1}</div>
-						<h3 className={`  md:text-xl md:!leading-[2rem] leading-[0.75rem] uppercase self-end   max-w-[15ch]   `}  >
+						<h3 className={`  md:text-xl uppercase self-center   max-w-[16ch]   `}  >
 							{title} 
 
 						</h3>

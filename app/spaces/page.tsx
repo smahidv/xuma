@@ -29,7 +29,7 @@ export default function spaces() {
 	});
 
 	return (
-		<main className="my-12   ">
+		<main className="py-12  mt-[10vh] ">
 			<div className="container">
 			<div className=" my-24 text-center">
 				<h2 className="font-black text-xl md:text-4xl">OUR SPACES</h2>
@@ -56,7 +56,7 @@ export default function spaces() {
 				</div>
 			</div>
 			</div>
-			<div ref={container} className="mb-[40vh] mt-[15vh] px-1 ">
+			<div ref={container} className="mb-[10rem] iPad:mb-0 mt-[15vh] px-1 ">
 				{gymSpaces.map((space, index) => {
 					const targetScale = 1 - (gymSpaces.length - index) * 0.04;
 					return (

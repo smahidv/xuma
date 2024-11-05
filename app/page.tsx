@@ -157,7 +157,7 @@ export default function Home() {
 			</section>
 			<section className="container my-16 xs:flex justify-center   ">
 				<div className=" text-center">
-					<h2 className="font-black  sm:text-3xl md:text-4xl text-xl">
+					<h2 className="font-black  sm:text-3xl md:text-4xl text-2xl">
 						Subscribe to our newsletter
 					</h2>
 					<p className="sm:text-xl text-xs py-[10px] ">

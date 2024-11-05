@@ -49,9 +49,10 @@ const config: Config = {
       },
       backgroundImage: {
         'hero-pattern': "url('/images/bgBlack.jpg')",
-        'hero-pattern-gray': "url('/images/bgGray.jpg')"
+        'hero-hiring': "url('/images/bgHiring.jpeg')",
+        'hero-rooms': "url('/images/bgRooms.jpg')",
 
-      },
+      }, 
       animation: {
         "infinite-scroll": "infinite-scroll 20s linear infinite",
         "rotate-text": "rotate-text 20s linear infinite",
