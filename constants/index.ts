@@ -2,7 +2,7 @@ import coach from "@/public/images/coach.jpg";
 import groupTraining from "@/public/images/groupTraining.jpg";
 import pool from "@/public/images/pool.jpg";
 import weightRoom from "@/public/images/weightRoom.jpg";
-import BodyBuilding from "@/public/images/BodyBuilding.jpg";
+import coaching from "@/public/images/coaching.jpg";
 import Cardio from "@/public/images/Cardio.jpg";
 import Classrooms from "@/public/images/Classrooms.jpg"
 import CrossTraining from "@/public/images/CrossTraining.jpg"
@@ -124,7 +124,7 @@ export const gymSpaces = [
     title: "Guided Bodybuilding",
     description: "For those focused on muscle growth, our guided bodybuilding section offers state-of-the-art machines that provide precise support for varied and effective muscle work. Each piece of equipment has been carefully selected to enhance your training experience and help you achieve your bodybuilding aspirations.",
     alt: "Guided bodybuilding area",
-    image:BodyBuilding
+    image:coaching
   },
   {
     title: "Cardio",
