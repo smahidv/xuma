@@ -13,11 +13,10 @@ import weightliftingImage from "@/public/images/weightlifting.jpg";
 import fitnessTrainingImage from "@/public/images/fitnessTraining.jpg";
 import groupClassesImage from "@/public/images/groupClasses.jpg";
 import kickboxingImage from "@/public/images/kickboxing.jpg";
-import MmaImage from "@/public/images/Mma.jpg";
+import MixedMartialArts from "@/public/images/MixedMartialArts.jpg";
 import kidsFightingImage from "@/public/images/kidsFighting.jpg";
 import padelImage from "@/public/images/padel.jpg";
 import symbol from "@/public/images/symbol.png"
-import { title } from "process";
 
 
 export const slidesContent = [
@@ -201,8 +200,8 @@ export const gymActivities = [
     title: "MMA",
     whatWeOffer: "Complete training that combines stand-up and ground fighting skills.",
     bestFor: "Fighters looking to expand their skill set with mixed martial arts.",
-    alt: "MMA",
-    image: MmaImage
+    alt: "Mixed Martial Arts",
+    image: MixedMartialArts
   },
   {
     title: "Kids Fighting",
