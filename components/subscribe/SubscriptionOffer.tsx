@@ -55,7 +55,7 @@ export default function ({  handleTabClick }: OfferProps) {
 								<div className="text-black uppercase font-black">{`${passe.price} dh  `}</div>
 								<ChevronDoubleDownIcon className="text-black size-[25px]" />
 							</div>
-							<div className="pt-6 mx-auto w-fit">
+							<div className="py-6 mx-auto w-fit">
 								<button
 									type="button"
                                     onClick={()=>{handleTabClick(i)}}

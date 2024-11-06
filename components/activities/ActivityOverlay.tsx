@@ -25,7 +25,7 @@ export default function ActivityOverlay() {
 			{currentActivity &&
 			(
 				
-				<div className="md:h-screen w-screen md:container ">
+				<div className="h-[100dvh] w-screen md:container ">
 					{/* mobile ui */}
 					<div className="md:hidden rounded-t-2xl">
 						<button
@@ -44,7 +44,7 @@ export default function ActivityOverlay() {
 							<div className="absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,0.99)] to-[rgba(0,0,0,0.2)]"></div>
 						</div>
 						<AnimatedDiv animationType="fadeOutLayer" >
-						<div className="absolute left-2  bottom-[5%] z-40 w-[calc(100%-0.5rem)]">
+						<div className="absolute left-2  bottom-[1.2rem] z-40 w-[calc(100%-0.5rem)]">
 							<div className="uppercase font-bold text-2xl mb-4">
 								{currentActivity.title}
 							</div>
@@ -118,13 +118,13 @@ export default function ActivityOverlay() {
 							</div>
 							</AnimatedDiv>
 							<div className=" justify-self-end lg:justify-self-center ">
-								<AnimatedDiv animationType="scaleImage">
+								{/* <AnimatedDiv animationType="scaleImage"> */}
 								<Image
 									src={currentActivity.image}
 									alt={currentActivity.alt}
 									className=" object-cover w-full"
 								/>
-								</AnimatedDiv>
+								{/* </AnimatedDiv> */}
 							</div>
 						</div>			
 					</div>
