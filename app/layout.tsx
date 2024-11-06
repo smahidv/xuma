@@ -5,7 +5,7 @@ import localFont from "next/font/local";
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { ActivityOverlayProvider} from '@/hooks/ActivityOverlayContext';
-import ManageOverlayState from "./utils/ManageOverlayState";
+import { Footer,Header } from "@/components";
 
 
 config.autoAddCss = false;
@@ -43,9 +43,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <html lang="en">
         <body className={`${avenir.variable} font-avenir relative`}>
         <ActivityOverlayProvider>
-        <ManageOverlayState>
-          {children}
-          </ManageOverlayState>
+        <Header />
+              {children}
+              <Footer />
           </ActivityOverlayProvider>
         </body>
       </html>

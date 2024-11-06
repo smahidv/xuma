@@ -1,5 +1,5 @@
 import { useRef, FC, ReactNode } from "react";
-import { useInView } from "framer-motion";
+import { AnimatePresence, useInView } from "framer-motion";
 import { motion  } from "framer-motion";
 import { animationVariants } from "@/motion/AnimationList";
 
@@ -29,6 +29,7 @@ const AnimatedDiv: FC<AnimatedDivProps> = ({
 		<div 
 		ref={ref}
 		 >
+			  <AnimatePresence>
 			<motion.div
 				initial="hidden"
 				animate={isInView ? "visible" : "hidden"}
@@ -37,6 +38,7 @@ const AnimatedDiv: FC<AnimatedDivProps> = ({
 			>
 				{children}
 			</motion.div>
+			</AnimatePresence>
 		</div>
 	);
 };

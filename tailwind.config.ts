@@ -51,12 +51,14 @@ const config: Config = {
         'hero-pattern': "url('/images/bgBlack.jpg')",
         'hero-hiring': "url('/images/bgHiring.jpeg')",
         'hero-rooms': "url('/images/bgRooms.jpg')",
-
+        'hero-subscribe':"url('/images/bgSubscribe.jpg')",
+        'splattered-gray':"url('/images/bg-splattered-gray.jpeg')",
       }, 
       animation: {
-        "infinite-scroll": "infinite-scroll 20s linear infinite",
+        "infinite-scroll": "infinite-scroll 25s linear infinite",
         "rotate-text": "rotate-text 20s linear infinite",
         "arrow": "arrow 1s linear  infinite",
+        "symbol":"symbol 2.5s ease-out infinite"
       },
       keyframes: {
         "infinite-scroll": {
@@ -75,6 +77,11 @@ const config: Config = {
           "75%": { transform: "translateX(-3px)" },
           "100%": { transform: "translateX(0)" }
         },
+        "symbol": {
+          "0%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(5px)" },
+          "100%": { transform: "translateY(0)" }
+        }
 
 
 

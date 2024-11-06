@@ -1,9 +1,16 @@
-import Activity from "@/components/activities/Activity";
+"use client"
+import ActivityOverlay from "@/components/activities/ActivityOverlay";
 import SwiperClient from "@/components/activities/SwiperClient";
+import { useActivityOverlay } from "@/hooks/ActivityOverlayContext";
 
 export default function activities() {
+	const { isOverlayOpen } = useActivityOverlay();
 	return (
-		<main className="py-12 mt-[10vh]  ">
+		<>
+		{isOverlayOpen ? (
+		<ActivityOverlay/>
+		)  : (
+			<main className="py-12 mt-[10vh]  ">
 			<div className=" my-24 text-center container">
 				<h2 className="font-black text-xl md:text-4xl">OUR ACTIVITIES</h2>
 				<div className="text-crayola text-center text-sm md:text-base font-bold">
@@ -30,5 +37,8 @@ export default function activities() {
 			</div>
 			<SwiperClient/>
 		</main>
+		)
+}
+		</>
 	);
 }

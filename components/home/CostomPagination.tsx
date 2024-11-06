@@ -16,7 +16,7 @@ export const CostomPagination = ({activeSlide,totalSlide}:CustomPaginationProps)
     <div className="flex justify-center md:justify-between items-center mt-4 md:mt-8">
 					<button
 						onClick={() => swiper.slidePrev(speed)}
-						className={`hidden md:block bg-crayola px-4 py-1 text-black rounded-lg font-bold ${
+						className={`hidden md:block bg-crayola px-4 py-1 hover:brightness-95 text-black rounded-lg font-bold ${
 							activeSlide === 0 ? "opacity-50 cursor-not-allowed" : ""
 						}`}
 						disabled={activeSlide === 0} // Disable if it's the first slide
@@ -36,7 +36,7 @@ export const CostomPagination = ({activeSlide,totalSlide}:CustomPaginationProps)
 				</div>
 					<button
 						onClick={() => swiper.slideNext(speed)}
-						className={`hidden md:block bg-crayola px-4 py-1 text-black rounded-lg font-bold ${
+						className={`hidden md:block bg-crayola px-4 py-1 text-black hover:brightness-95 rounded-lg font-bold ${
 							activeSlide === totalSlide - 1 
 								? "opacity-50 cursor-not-allowed"
 								: ""

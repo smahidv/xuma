@@ -37,7 +37,7 @@ export default function Card({
 			className=" pt-16  sticky top-[10vh] max-w-[1000px] mx-auto    "
 		>
 			<motion.div
-				style={{ top: `calc(-${i + 9}vh + ${i * 40}px)`, scale }}
+				style={{ top: `calc(-${i + 8}vh + ${i * 40}px)`, scale }}
 				className="  border-y-4 border-crayola bg-dark_gray h-[500px] md:h-[450px] px-2 md:px-8 relative flex flex-col justify-center items-center"
 			>
 				<div className="flex flex-col md:flex-row gap-y-6 items-center  md:gap-x-8">

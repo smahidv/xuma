@@ -1,15 +1,17 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import xuma from "@/public/images/logo.png";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Navigation from "@/components/navigation/Navigation";
 import Link from "next/link";
-import { usePathname } from 'next/navigation'
+import { useActivityOverlay } from "@/hooks/ActivityOverlayContext";
 
 export default function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	const currentPath = usePathname();
+	const { isOverlayOpen } = useActivityOverlay();
+
+	if (isOverlayOpen) return null; 
 
 	function toggleMenu() {
 		setIsMenuOpen(!isMenuOpen);
@@ -51,7 +53,7 @@ export default function Header() {
 				</div>
 				<div className="flex md:gap-4 gap-1 items-center">
 					<button className="text-sm sm:text-base rounded-full bg-crayola text-black  md:px-btn-md-x md:py-btn-md-y  px-btn-sm-x py-btn-sm-y font-black capitalize hover:shadow-crayola_shd">
-						subscribe
+						<Link href="/subscribe">subscribe</Link>
 					</button>
 					<button
 						className="lg:absolute right-4 z-20 top-4 lg:hidden "

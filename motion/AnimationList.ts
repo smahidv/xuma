@@ -1,4 +1,3 @@
-import { delay } from "framer-motion";
 
 export const animationVariants = {
 	fadeDownLeft: {
@@ -6,7 +5,7 @@ export const animationVariants = {
 		visible: {
 			transform: "translate3d(0, 0, 0)",
 			opacity: 1,
-			transition: { duration: 1.5, ease: [0.215, 0.61, 0.355, 1] },
+			transition: { duration: 1, ease: [0.215, 0.61, 0.355, 1] },
 		},
 	},
 	perspective: {
@@ -27,7 +26,7 @@ export const animationVariants = {
 			opacity: 1,
 			transition: {
 				duration: 1,
-				delay:0.2
+				delay: 0.2
 			},
 		},
 	},
@@ -45,12 +44,12 @@ export const animationVariants = {
 		},
 	},
 	zoomInUp: {
-		hidden: { opacity: 0, transform: "translate3d(0,100px,0) scale(0.6)" },
+		hidden: { opacity: 0, transform: "translate3d(0,100px,0) scale(0.8)" },
 		visible: {
 			opacity: 1,
 			transform: "translate3d(0,0,0) scale(1)",
 			transition: {
-				duration: 1.2,
+				duration: 1,
 				ease: [0, 0, 0.58, 1], // Custom easeOut equivalent
 			},
 		},
@@ -71,7 +70,7 @@ export const animationVariants = {
 			opacity: 1,
 			transform: "translatex(0)",
 			transition: {
-				duration: 1,
+				duration: 0.5,
 			},
 		},
 	},
@@ -82,9 +81,59 @@ export const animationVariants = {
 			transform: "translatey(0)",
 			transition: {
 				duration: 1,
-				delay:0.5
+				delay: 0.2
 			},
 		},
 	},
+	fadeLeftSwiper: {
+		hidden: { transform: "translatex(100%)" },
+		visible: {
+			transform: "translatex(0)",
+			transition: {
+				duration: 2,
+				ease: "easeInOut"
+			},
+		},
+	},
+	scaleUpSlider: {
+		hidden: { scale: 1.1 },
+		visible: {
+			scale: 1,
+			transition: {
+				duration: 0.1,
+				ease: "easeInOut",
+				yoyo: 1, // Adds a bounce back to the original size
+			},
+	
+		},
+	},
+	fadeOutLayer: {
+		hidden: { opacity: 0,y:50 },
+		visible: {
+			opacity: 1,
+			y:0,
+			transition: {
+				duration: 1,
+				ease: "easeInOut",
+			},
+		},
+	},
+	scaleImage:{
+		hidden: { scale: 0.5 },
+        visible: {
+            scale: 1,
+            transition: {
+                duration: 1,
+                ease: "easeInOut",
+            },
+        },
+	
+	},
+
+
+
+	
+
+
 
 };

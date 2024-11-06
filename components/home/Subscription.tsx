@@ -1,5 +1,5 @@
 "use client";
-import React, {useState } from "react";
+import React, { useState } from "react";
 import { pricing } from "@/constants";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,7 +21,6 @@ const Subscription = () => {
 			if (item.isLeft) return "fadeLeft";
 			if (item.bestDeal) return "fadeUp";
 			if (!item.isLeft) return "fadeRight";
-
 		} else {
 			return item.bestDeal ? "fadeRight" : "fadeLeft";
 		}
@@ -111,7 +110,7 @@ const Subscription = () => {
 										<p className="max-w-[40ch] text-sm md:text-base">
 											{item.description}
 										</p>
-										<button className="hover:shadow-crayola_sm_shd w-full bg-purple_taupe md:px-2 md:py-1 px-1 py-0.5 rounded-lg from-crayola to-purple_taupe p-[1.2px] bg-gradient-to-l">
+										<button className="hover:shadow-crayola_sm_shd w-full bg-purple_taupe md:px-2 md:py-2 px-1 py-0.5 rounded-lg from-crayola to-purple_taupe p-[1.2px] bg-gradient-to-l">
 											<Link href="#" className="font-bold text-sm md:text-base">
 												Subscribe
 											</Link>

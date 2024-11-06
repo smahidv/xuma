@@ -16,7 +16,7 @@ import kickboxingImage from "@/public/images/kickboxing.jpg";
 import MixedMartialArts from "@/public/images/MixedMartialArts.jpg";
 import kidsFightingImage from "@/public/images/kidsFighting.jpg";
 import padelImage from "@/public/images/padel.jpg";
-import symbol from "@/public/images/symbol.png"
+import BlackSymbol from "@/public/images/BlackSymbol.png"
 
 
 export const slidesContent = [
@@ -221,7 +221,7 @@ export const gymActivities = [
 
 export const xumaLocations = [
 {
-  symbolImage:symbol,
+  symbolImage:BlackSymbol,
   title:"casablanca",
   address:"58 rue California",
   phone:"+212 6 22 22 22 22",
@@ -229,18 +229,57 @@ export const xumaLocations = [
   
 },
 {
-  symbolImage:symbol,
+  symbolImage:BlackSymbol,
   title:"benslimane",
   address:"20 rue Zerktouni",
   phone:"+212 6 22 22 22 22",
   image:Classrooms
 },
 {
-  symbolImage:symbol,
+  symbolImage:BlackSymbol,
   title:"agadir",
   address:"54 rue lina",
   phone:"+212 6 22 22 22 22",
   image:Cardio
 }
 ]
+export const passes = [
+  {
+    name: "Fitness Pass",
+    price: 2990,
+    buttonLabel: "Select",
+    description: [
+      "From 6 a.m. to 11 p.m.",
+      "Mixed fitness area",
+      "100% women's space",
+      "Lesmills group classes and cross-training",
+      "Additional activities by reservation",
+    ],
+  },
+  {
+    name: "Total Pass",
+    price: 3999,
+    buttonLabel: "Select",
+    description: [
+      "24/7 access",
+      "Mixed and women-only fitness areas",
+      "Full Lesmills and cross-training classes",
+      "All equipment access",
+      "Priority booking for extra activities",
+    ],
+  },
+  {
+    name: "Kids Pass",
+    price: 1900,
+    buttonLabel: "Discover our kids passes",
+    description: [
+      "Open daily from 9 a.m. to 6 p.m.",
+      "Age-appropriate fitness programs",
+      "Supervised activities",
+      "Specialized trainers for kids",
+      "Educational and fun classes",
+    ],
+  },
+];
+
 

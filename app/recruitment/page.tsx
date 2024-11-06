@@ -1,9 +1,10 @@
-import React from "react";
+import Image from "next/image";
+import DarkCharcoalSymbol from "@/public/images/DarkCharcoalSymbol.png"
 
 export default function recruitment() {
 	return (
 		<main>
-			<div className="bg-hero-hiring mt-[10vh] relative bg-no-repeat bg-cover w-screen h-[300px] bg-top">
+			<div className="bg-hero-hiring mt-[12vh] relative bg-no-repeat bg-cover w-screen h-[300px] bg-top">
 				<div className="absolute inset-0 bg-black opacity-25 z-10"></div>
 				<div className="flex items-center justify-center h-full relative z-20">
 					<h2 className="font-black text-xl md:text-4xl uppercase ">
@@ -11,7 +12,7 @@ export default function recruitment() {
 					</h2>
 				</div>
 			</div>
-			<div className="container flex justify-center items-center my-28 text-center ">
+			<div className="container relative flex justify-center items-center py-28 text-center  ">
 				<div>
 					<div className="font-black text-xl md:text-4xl uppercase text-crayola">
 						The xuma FAMILY IS COMPLETE
@@ -19,6 +20,9 @@ export default function recruitment() {
 					<div className="font-black text-xl md:text-4xl uppercase ">
 						to be continued
 					</div>
+				</div>
+				<div className="absolute left-1/2 top-0 -z-10 -translate-x-1/2">
+					<Image src={DarkCharcoalSymbol} alt="symboal of women background" className=" brightness-[0.5]"/>
 				</div>
 			</div>
 			<section className="container mb-16 xs:flex justify-center   ">

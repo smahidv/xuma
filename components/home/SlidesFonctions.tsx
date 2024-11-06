@@ -28,7 +28,7 @@ const SlidesFonctions = ({ slidesContent }: SlidesContentProps) => {
 		<Swiper
 			spaceBetween={50}
 			slidesPerView={1}
-			loop={true}
+			 
 			effect="coverflow"
 			coverflowEffect={{
 				rotate: 50,
@@ -57,12 +57,12 @@ const SlidesFonctions = ({ slidesContent }: SlidesContentProps) => {
 							</p>
 							<Link
 								href="#"
-								className="group hover:shadow-sm hover:shadow-gray-300  mt-4 pl-btn-sm-x pr-2 py-[0.2rem] md:pl-4 md:py-1 w-fit bg-white rounded-full flex gap-4 items-center"
+								className=" hover:shadow-sm  mt-4 pl-btn-sm-x pr-2 py-[0.2rem] md:pl-4 md:py-1 w-fit bg-white rounded-full flex gap-4 items-center"
 							>
 								<span className="text-black text-xs md:text-base font-bold">
 									Sign up
 								</span>
-								<div className="group-hover:translate-x-1 transition-transform duration-500 md:size-6 flex items-center justify-center rounded-full bg-crayola size-4">
+								<div className="animate-arrow transition-transform duration-500 md:size-6 flex items-center justify-center rounded-full bg-crayola size-4">
 									<FontAwesomeIcon
 										icon={faArrowRight}
 										className="text-black md:size-4 size-2"
