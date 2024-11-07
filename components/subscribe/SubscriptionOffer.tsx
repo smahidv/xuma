@@ -19,7 +19,7 @@ export default function ({  handleTabClick }: OfferProps) {
 					<h3 className="uppercase font-black text-center md:text-lg">
 						subscription
 					</h3>
-					<div className="rounded-full border-dark border px-4 py-2 flex gap-[16.5px] items-center bg-black/50">
+					<div className="rounded-full border-dark border px-4 py-3 flex gap-[16.5px] items-center bg-black/50">
 						<FontAwesomeIcon icon={faLocationDot} />
 						<div className="uppercase font-bold text-white text-xs md:text-base ">
 							xuma by Lisa Manathon
@@ -50,7 +50,7 @@ export default function ({  handleTabClick }: OfferProps) {
 							<div className="text-center text-crayola uppercase text-xs group-hover:text-black md:text-base">
 								1an
 							</div>
-							<div className="bg-white group-hover:shadow-lg flex items-center justify-between  rounded-sm px-4 py-1.5 md:py-3 md:px-6">
+							<div className="bg-white group-hover:shadow-lg flex items-center justify-between  rounded-sm py-3 px-6">
 								<ChevronDoubleDownIcon className="text-black size-[25px]" />
 								<div className="text-black uppercase font-black">{`${passe.price} dh  `}</div>
 								<ChevronDoubleDownIcon className="text-black size-[25px]" />
@@ -59,7 +59,7 @@ export default function ({  handleTabClick }: OfferProps) {
 								<button
 									type="button"
                                     onClick={()=>{handleTabClick(i)}}
-									className="border border-crayola rounded-md px-6 md:px-8 md:py-2 py-1 text-xs md:text-base group-hover:bg-black group-hover:border-none hover:text-black hover:!border hover:!border-solid hover:!border-black hover:!bg-crayola"
+									className="border border-crayola rounded-md px-12 py-3 font-bold  text-xs md:text-base group-hover:bg-black group-hover:border-none hover:text-black hover:!border hover:!border-solid hover:!border-black hover:!bg-crayola"
 								>
 									{passe.buttonLabel}
 								</button>

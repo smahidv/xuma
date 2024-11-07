@@ -27,7 +27,7 @@ export default function Header() {
 	
 
 	return (
-		<header className="lg:px-14 md:pt-4 p-2   bg-black z-30 w-full fixed top-0">
+		<header className="lg:px-14 md:pt-4 p-2   bg-black z-30 w-full fixed top-0  [box-shadow:0px_10px_50px_-10px_black]">
 			<nav className="flex justify-between items-center ">
 				<Link href="/" className=" w-[90px] md:w-[110px] ">
 					<Image
@@ -38,7 +38,6 @@ export default function Header() {
 						className="w-full max-w-full h-auto object-contain"
 					/>
 				</Link>
-
 				<div
 					className={`ul-container self-center flex justify-center overflow-auto  ${
 						isMenuOpen 

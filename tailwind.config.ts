@@ -53,6 +53,10 @@ const config: Config = {
         'hero-rooms': "url('/images/bgRooms.jpg')",
         'hero-subscribe':"url('/images/bgSubscribe.jpg')",
         'splattered-gray':"url('/images/bg-splattered-gray.jpeg')",
+        'hero-cover':"url('/images/bg-cover.jpg')",
+        'hero-contact':"url('/images/bg-contact.jpg')",
+
+
       }, 
       animation: {
         "infinite-scroll": "infinite-scroll 25s linear infinite",

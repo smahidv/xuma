@@ -14,7 +14,7 @@ export default function rooms() {
 				</div>
 			</div>
 			<div className="container mt-[10vh]">
-				<div className="flex flex-col md:flex-wrap gap-6 md:flex-row ">
+				<div className="flex flex-col md:flex-wrap justify-center gap-6 md:flex-row ">
 					{xumaLocations.map((location, index) => (
 						<div
 							key={index}

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import DarkCharcoalSymbol from "@/public/images/DarkCharcoalSymbol.png"
+import DarkCharcoalSymbol from "@/public/images/DarkCharcoalSymbol.png";
 
 export default function recruitment() {
 	return (
@@ -22,7 +22,11 @@ export default function recruitment() {
 					</div>
 				</div>
 				<div className="absolute left-1/2 top-0 -z-10 -translate-x-1/2">
-					<Image src={DarkCharcoalSymbol} alt="symboal of women background" className=" brightness-[0.5]"/>
+					<Image
+						src={DarkCharcoalSymbol}
+						alt="symboal of women background"
+						className=" brightness-[0.5]"
+					/>
 				</div>
 			</div>
 			<section className="container mb-16 xs:flex justify-center   ">

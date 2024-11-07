@@ -71,7 +71,7 @@ const Subscription = () => {
 					return (
 						<div
 							key={index}
-							className="relative self-end flex-shrink sm:max-w-[48%] lg:max-w-[32%] 2xl:max-w-[25%] w-full"
+							className="relative self-end  lg:max-w-[32%] 2xl:max-w-[25%] w-full"
 						>
 							<AnimatedDiv animationType={animationType}>
 								<div

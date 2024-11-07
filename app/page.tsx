@@ -13,11 +13,13 @@ import Environement from "@/components/home/Environement";
 import Activities from "@/components/home/Activities";
 import Contact from "@/components/home/Contact";
 import Hiring from "@/components/home/hiring/Hiring";
+import Link from "next/link";
 
 export default function Home() {
 	return (
 		<div>
-			<section className="relative flex md:h-[90dvh] md:pb-4 pt-4  justify-center items-center  ">
+			<section className="relative flex md:h-[90dvh] md:pb-4 pt-4  justify-center items-center bg-hero-cover ">
+				<div className="absolute size-full inset-0 bg-black/60"></div>
 				{/* Left Circle Image */}
 				<div className="animate-rotate-cercle-left hidden  iPad:w-[260px]  lg:w-[300px] md:w-[200px] md:inline-flex absolute left-0 bottom-10 -translate-x-[30%] ">
 					<Image
@@ -28,7 +30,6 @@ export default function Home() {
 						priority
 					/>
 				</div>
-
 				{/* Text Content */}
 				<div className=" flex justify-center items-center px-3 pt-[15dvh] md:p-0 z-10 lg:mt-28 ">
 					<div>
@@ -65,7 +66,7 @@ export default function Home() {
 								</div>
 							</div>
 							<button className="w-full md:w-fit font-black text-black bg-crayola capitalize md:px-btn-md-x md:py-btn-md-y  px-btn-sm-x py-btn-sm-y rounded-full hover:shadow-crayola_sm_shd">
-								become a member
+							<Link href="/subscribe" >become a member</Link>
 							</button>
 						</div>
 						<div className="flex justify-end">
@@ -76,7 +77,6 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-
 				{/* Right Circle Image */}
 				<div className="animate-rotate-cercle-right   hidden iPad:w-[260px]  lg:w-[300px] md:w-[200px] md:inline-flex absolute right-0  md:top-24  translate-x-[34%] scale-[-1] ">
 					<Image
@@ -131,13 +131,13 @@ export default function Home() {
 			</section>
 			<section className="my-12 md:my-24 container lg:mt-32   ">
 				<div className="flex relative mb-4">
-					<Chevron className="size-8 md:size-12 text-crayola fill-current" />
-					<Chevron className="absolute size-8 md:size-12 text-white fill-current left-5 md:left-10" />
+					<Chevron className="size-8 lg:size-12 text-crayola fill-current" />
+					<Chevron className="absolute size-8 lg:size-12 text-white fill-current left-5 lg:left-10" />
 				</div>
 				<SlidesFonctions slidesContent={slidesContent} />
 			</section>
 			<Activities />
-			<section className=" mt-24 sm:containe mx-[38px] ">
+			<section className=" mt-24 container  ">
 				<div className="flex gap-2 md:gap-4 items-center ">
 					<div className="w-[30px] md:w-[50px]">
 						<Image src={symbol} alt="women symbol" width={57} height={63} />
@@ -152,7 +152,7 @@ export default function Home() {
 			<section className="my-12 container ">
 			<Hiring/>
 			</section> 
-			<section className="pb-12 mt-12 md:mt-0">
+			<section className=" pb-12 mt-12 md:mt-0">
 				<Contact />
 			</section>
 			<section className="container my-16 xs:flex justify-center   ">
