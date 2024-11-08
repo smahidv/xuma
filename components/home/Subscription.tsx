@@ -110,11 +110,11 @@ const Subscription = () => {
 										<p className="max-w-[40ch] text-sm md:text-base">
 											{item.description}
 										</p>
-										<button className="hover:shadow-crayola_sm_shd w-full bg-purple_taupe md:px-2 md:py-2 px-1 py-0.5 rounded-lg from-crayola to-purple_taupe p-[1.2px] bg-gradient-to-l">
-											<Link href="#" className="font-bold text-sm md:text-base">
+
+											<Link href="#" className="hover:shadow-crayola_sm_shd w-full bg-purple_taupe md:px-2 md:py-2 px-1 py-0.5 rounded-lg from-crayola to-purple_taupe p-[1.2px] bg-gradient-to-l font-bold text-sm md:text-base">
 												Subscribe
 											</Link>
-										</button>
+									
 										<div className="center gap-4 pb-2 pt-1">
 											<FontAwesomeIcon
 												icon={faCircle}

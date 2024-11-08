@@ -28,7 +28,7 @@ export default function Activities() {
 						<Image src={symbol} alt="xuma symbom" />
 					</div>
 					<div className="center group">
-						<Link href="#">
+						<Link href="/activities">
 							<span className="font-bold md:text-lg">Discover</span>
 							<FontAwesomeIcon
 								icon={faArrowRight}
@@ -53,7 +53,7 @@ export default function Activities() {
 						<Image src={symbol} alt="xuma symbom" />
 					</div>
 					<div className="center group">
-						<Link href="#">
+						<Link href="/spaces">
 							<span className="font-bold md:text-lg">Discover</span>
 							<FontAwesomeIcon
 								icon={faArrowRight}

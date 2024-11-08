@@ -48,9 +48,7 @@ export default function Hiring() {
 					</motion.div>
 				</div>
 			</div>
-			<button className="hover:shadow-crayola_sm_shd bg-purple_taupe px-8 py-2 rounded-md w-fit  font-bold md:text-xl">
-				<Link href="#">Apply</Link>
-			</button>
+				<Link href="/recruitment" className="hover:shadow-crayola_sm_shd bg-purple_taupe px-8 py-2 rounded-md w-fit  font-bold md:text-xl">Apply</Link>		
 		</div>
 	);
 }

@@ -51,9 +51,9 @@ export default function Header() {
 					 />
 				</div>
 				<div className="flex md:gap-4 gap-1 items-center">
-					<button className="text-sm sm:text-base rounded-full bg-crayola text-black  md:px-btn-md-x md:py-btn-md-y  px-btn-sm-x py-btn-sm-y font-black capitalize hover:shadow-crayola_shd">
-						<Link href="/subscribe">subscribe</Link>
-					</button>
+				
+						<Link href="/subscribe" className="text-sm sm:text-base rounded-full bg-crayola text-black  md:px-btn-md-x md:py-btn-md-y  px-btn-sm-x py-btn-sm-y font-black capitalize hover:shadow-crayola_shd">subscribe</Link>
+
 					<button
 						className="lg:absolute right-4 z-20 top-4 lg:hidden "
 						aria-label="Toggle Menu"

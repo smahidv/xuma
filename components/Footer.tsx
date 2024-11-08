@@ -29,16 +29,16 @@ export default function Footer() {
             If you want to get healthier and improve your body.
           </p>
           
-          <button className="block group sm:inline-block w-full sm:w-fit relative rounded-full p-[1.2px] bg-gradient-to-l from-crayola to-purple_taupe">
+          <Link href="/contact" className="block group sm:inline-block w-full sm:w-fit relative rounded-full p-[1.2px] bg-gradient-to-l from-crayola to-purple_taupe">
             <div className="bg-black rounded-full w-full h-full flex justify-center items-center md:px-btn-md-x md:py-btn-md-y px-btn-sm-x py-btn-sm-y">
-              <Link href="/contact" className="font-bold text-white group-hover:text-purple_taupe">
+              <div className="font-bold text-white group-hover:text-purple_taupe">
                 Contact
-              </Link>
+              </div>
             </div>
-          </button>
+          </Link>
 
           <button className="w-full sm:w-fit sm:ml-4 font-bold bg-purple_taupe capitalize md:px-btn-md-x md:py-btn-md-y px-btn-sm-x py-btn-sm-y rounded-full hover:shadow-crayola_sm_shd">
-            become a member
+           <Link href="/subscibe"> become a member</Link>
           </button>
         </div>
       </div>

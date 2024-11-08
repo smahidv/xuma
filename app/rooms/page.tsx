@@ -58,14 +58,11 @@ export default function rooms() {
 										</div>
 										{/* end contact */}
 										<div className="mt-4 text-center">
-											<button
-												type="button"
-												className="bg-black lg:w-full  rounded-md py-[0.6rem] px-3 md:py-3 "
-											>
-												<Link className="text-white " href="/spaces">
+
+												<Link className="text-white bg-black lg:w-full  rounded-md py-[0.6rem] px-3 md:py-3 " href="/spaces">
 													See more
 												</Link>
-											</button>
+										
 										</div>
 									</div>
 								</div>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import DarkCharcoalSymbol from "@/public/images/DarkCharcoalSymbol.png";
+import Link from "next/link";
 
 export default function recruitment() {
 	return (
@@ -50,7 +51,7 @@ export default function recruitment() {
 								type="button"
 								className="px-btn-x py-btn-y bg-crayola text-black rounded-sm font-black h-full"
 							>
-								Subscribe
+							<Link href="/subscribe">Subscribe</Link>
 							</button>
 						</div>
 					</div>

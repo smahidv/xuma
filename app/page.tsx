@@ -65,9 +65,9 @@ export default function Home() {
 									<span>Founder</span>
 								</div>
 							</div>
-							<button className="w-full md:w-fit font-black text-black bg-crayola capitalize md:px-btn-md-x md:py-btn-md-y  px-btn-sm-x py-btn-sm-y rounded-full hover:shadow-crayola_sm_shd">
-							<Link href="/subscribe" >become a member</Link>
-							</button>
+						
+							<Link href="/subscribe" className="w-full md:w-fit font-black text-black bg-crayola capitalize md:px-btn-md-x md:py-btn-md-y  px-btn-sm-x py-btn-sm-y rounded-full hover:shadow-crayola_sm_shd">become a member</Link>
+							
 						</div>
 						<div className="flex justify-end">
 							<FontAwesomeIcon
