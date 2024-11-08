@@ -66,9 +66,15 @@ export default function Home() {
 								</div>
 							</div>
 						
-							<Link href="/subscribe" className="w-full md:w-fit font-black text-black bg-crayola capitalize md:px-btn-md-x md:py-btn-md-y  px-btn-sm-x py-btn-sm-y rounded-full hover:shadow-crayola_sm_shd">become a member</Link>
+					{/* <Link href="/subscribe" className="w-full md:w-fit font-black text-black bg-crayola capitalize md:px-btn-md-x md:py-btn-md-y  px-btn-sm-x py-btn-sm-y rounded-full hover:shadow-crayola_sm_shd">become a member</Link> */}
 							
-						</div>
+					{/* <div className="w-full  "> */}
+							<Link href="/subscribe" className=" block md:w-fit md:px-8 w-full text-center md:py-3 py-2 font-black text-black bg-crayola capitalize rounded-full hover:shadow-crayola_sm_shd" >become a member</Link>
+					{/* </div>; */}
+					
+					</div>
+
+
 						<div className="flex justify-end">
 							<FontAwesomeIcon
 								className="text-xl md:text-4xl  text-crayola"

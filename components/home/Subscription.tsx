@@ -111,7 +111,8 @@ const Subscription = () => {
 											{item.description}
 										</p>
 
-											<Link href="#" className="hover:shadow-crayola_sm_shd w-full bg-purple_taupe md:px-2 md:py-2 px-1 py-0.5 rounded-lg from-crayola to-purple_taupe p-[1.2px] bg-gradient-to-l font-bold text-sm md:text-base">
+											<Link href="/subscribe" className="block w-full text-center hover:shadow-crayola_sm_shd  bg-purple_taupe py-2
+											  rounded-lg from-crayola to-purple_taupe bg-gradient-to-l font-bold text-sm md:text-base">
 												Subscribe
 											</Link>
 									
