@@ -32,6 +32,9 @@ const avenir = localFont({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: '/images/icon.png',
+  },
   title: "Xuma",
   description:
     "FITNESS · Cardio-Training · MMA · Boxing · Kickboxing · BODYBUILDING · FITNESS · Cardio-Training.",

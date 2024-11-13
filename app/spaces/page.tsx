@@ -7,7 +7,6 @@ import Lenis from "lenis";
 
 export default function spaces() {
 	const container = useRef(null);
-
 	const { scrollYProgress } = useScroll({
 		target: container,
 		offset: ["start start", "end end"],
@@ -27,7 +26,6 @@ export default function spaces() {
 		}
 		requestAnimationFrame(raf);
 	});
-
 	return (
 		<main className="py-12  mt-[10vh] ">
 			<div className="container">

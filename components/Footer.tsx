@@ -28,7 +28,7 @@ export default function Footer() {
           <p className="text-light_gray font-bold max-w-[30ch] md:max-w-[50ch]">
             If you want to get healthier and improve your body.
           </p>
-          <div className="md:flex md:gap-6">
+          <div className="md:flex md:gap-6 ">
           <Link href="/contact" className="block group sm:inline-block w-full sm:w-fit relative rounded-full p-[1.2px] bg-gradient-to-l from-crayola to-purple_taupe">
             <div className="bg-black rounded-full w-full h-full flex justify-center items-center md:px-btn-md-x md:py-btn-md-y px-btn-sm-x py-btn-sm-y">
               <div className="font-bold text-white group-hover:text-purple_taupe">
@@ -37,7 +37,7 @@ export default function Footer() {
             </div>
           </Link>
 
-          <Link href="/subscibe" className=" block md:w-fit w-full md:py-3 py-2 text-center md:px-8  font-bold bg-purple_taupe capitalize rounded-full hover:shadow-crayola_sm_shd">
+          <Link href="/subscibe" className="mt-4 md:mt-0 block md:w-fit w-full md:py-3 py-2 text-center md:px-8  font-bold bg-purple_taupe capitalize rounded-full hover:shadow-crayola_sm_shd">
             become a member
           </Link>
           </div>
