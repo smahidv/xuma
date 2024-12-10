@@ -26,7 +26,7 @@ export const CostomPagination = ({activeSlide,totalSlide}:CustomPaginationProps)
 					<div className="flex gap-1">
           {Array.from({ length: totalSlide  }).map((_, index) => (
 						<button
-						role={`go to page ${index + 1}`}
+						aria-label={`go to page ${index + 1}`}
 							key={index}
 							onClick={() => swiper.slideToLoop(index,speed )} 
 							className={`h-1 w-14 rounded-full ${
